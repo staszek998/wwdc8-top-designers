@@ -12,6 +12,7 @@ import Circles from "./sections/Circles/Circles";
 import OurTeam from "./sections/OurTeam/OurTeam";
 import Portfolio from "./sections/Portfolio/Portfolio";
 import Brands from "./sections/Brands/Brands";
+import Footer from "./sections/Footer/Footer";
 
 // SCSS imports
 import "./App.scss";
@@ -28,6 +29,7 @@ class App extends Component {
           <Portfolio />
           <Brands />
         </main>
+        <Footer />
       </div>
     );
   }
