@@ -6,6 +6,7 @@
 
 // JS imports
 import React, { Component } from "react";
+import MediaQuery from "react-responsive";
 
 // SCSS imports
 import "./_Navbar.scss";
@@ -15,8 +16,7 @@ class Navbar extends Component {
     isMenuExpanded: false
   };
 
-  handleHamburgerClick = event => {
-    event.preventDefault();
+  handleHamburgerClick = () => {
     this.setState({
       isMenuExpanded: !this.state.isMenuExpanded
     });
@@ -26,40 +26,48 @@ class Navbar extends Component {
     return (
       <nav className="Navbar border">
         <div className="container">
-          <div className="row">
-            {/* DSGN logotype */}
-            <div className="col-6">
-              <a href="/" className="Navbar__logotype">
-                DSGN
-              </a>
-            </div>
+          {/* Mobile */}
+          <MediaQuery query="(max-device-width: 765px)">
+            <div className="Navbar--mobile row">
+              {/* DSGN logotype */}
+              <div className="col-6">
+                <a href="/" className="Navbar__logotype">
+                  DSGN
+                </a>
+              </div>
 
-            {/* Hamburger button / menu trigger */}
-            <div className="col-6">
-              <button
-                className="Navbar__menu-trigger"
-                onClick={this.handleHamburgerClick}
+              {/* Hamburger button / menu trigger */}
+              <div className="col-6">
+                <button
+                  className="Navbar__menu-trigger"
+                  onClick={this.handleHamburgerClick}
+                >
+                  MENU
+                </button>
+              </div>
+
+              {/* Menu content */}
+              <div
+                className={`Navbar__menu-content row ${
+                  this.state.isMenuExpanded ? "expanded" : null
+                }`}
               >
-                MENU
-              </button>
-            </div>
-
-            {/* Menu content */}
-            <div
-              className={`Navbar__menu-content row ${
-                this.state.isMenuExpanded ? "expanded" : null
-              }`}
-            >
-              <div className="col-12">
-                <b>menu content</b>
-                <br />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
-                quam assumenda corporis maxime cumque debitis nemo officiis enim
-                magni odit? Unde praesentium commodi corporis assumenda aut
-                voluptas dicta nam repellendus.
+                <div className="col-12">
+                  <b>menu content</b>
+                  <br />
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Iure, quam assumenda corporis maxime cumque debitis nemo
+                  officiis enim magni odit? Unde praesentium commodi corporis
+                  assumenda aut voluptas dicta nam repellendus.
+                </div>
               </div>
             </div>
-          </div>
+          </MediaQuery>
+
+          {/* Desktop */}
+          <MediaQuery query="(min-device-width: 768px)">
+            <div className="Navbar--desktop row">Navbar--desktop</div>
+          </MediaQuery>
         </div>
       </nav>
     );
