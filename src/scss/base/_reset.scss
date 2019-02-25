@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+////
+/// The declarations in this SCSS stylesheet will make sure
+/// that the website / web app will be displayed
+/// in the unified way across all of the different browsers.
+///
+/// @author Stanisław Gregor <gregor.stanislaw@hotmail.com>
+////
+
 html {
   box-sizing: border-box;
   font-size: 16px;
