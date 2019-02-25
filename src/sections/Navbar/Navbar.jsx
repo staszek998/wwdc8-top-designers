@@ -24,7 +24,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="Navbar">
+      <nav className="Navbar border">
         <div className="container">
           <div className="row">
             {/* DSGN logotype */}
