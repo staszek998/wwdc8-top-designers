@@ -10,6 +10,6 @@ import React from "react";
 // SCSS imports
 import "./_Brands.scss";
 
-const Brands = () => <section className="Brands">Brands</section>;
+const Brands = () => <section className="Brands text-center">Brands</section>;
 
 export default Brands;

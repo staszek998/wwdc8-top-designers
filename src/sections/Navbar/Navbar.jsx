@@ -10,6 +10,6 @@ import React from "react";
 // SCSS imports
 import "./_Navbar.scss";
 
-const Navbar = () => <nav className="Navbar">Navbar</nav>;
+const Navbar = () => <nav className="Navbar text-center">Navbar</nav>;
 
 export default Navbar;

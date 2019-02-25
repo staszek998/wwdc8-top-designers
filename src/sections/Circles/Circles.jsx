@@ -10,6 +10,6 @@ import React from "react";
 // SCSS imports
 import "./_Circles.scss";
 
-const Circles = () => <section className="Circles">Circles</section>;
+const Circles = () => <section className="Circles text-center">Circles</section>;
 
 export default Circles;

@@ -10,6 +10,6 @@ import React from "react";
 // SCSS imports
 import "./_Footer.scss";
 
-const Footer = () => <footer className="Footer">Footer</footer>;
+const Footer = () => <footer className="Footer text-center">Footer</footer>;
 
 export default Footer;

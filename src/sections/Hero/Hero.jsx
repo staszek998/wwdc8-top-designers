@@ -10,6 +10,6 @@ import React from "react";
 // SCSS imports
 import "./_Hero.scss";
 
-const Hero = () => <header className="Hero">Hero</header>;
+const Hero = () => <header className="Hero text-center">Hero</header>;
 
 export default Hero;

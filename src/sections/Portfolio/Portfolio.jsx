@@ -10,6 +10,6 @@ import React from "react";
 // SCSS imports
 import "./_Portfolio.scss";
 
-const Portfolio = () => <section className="Portfolio">Portfolio</section>;
+const Portfolio = () => <section className="Portfolio text-center">Portfolio</section>;
 
 export default Portfolio;
