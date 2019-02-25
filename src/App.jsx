@@ -8,6 +8,7 @@
 import React, { Component } from "react";
 import Navbar from "./sections/Navbar/Navbar";
 import Hero from "./sections/Hero/Hero";
+import Circles from "./sections/Circles/Circles";
 
 // SCSS imports
 import "./App.scss";
@@ -18,6 +19,9 @@ class App extends Component {
       <div>
         <Navbar />
         <Hero />
+        <main>
+          <Circles />
+        </main>
       </div>
     );
   }
