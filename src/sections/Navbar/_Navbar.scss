@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+////
+/// This SCSS stylesheet is being loaded with the Navbar component.
+///
+/// Table of contents:
+/// 1. Collapsed content (menu-content) (#collapse).
+///
+/// @author Stanisław Gregor <gregor.stanislaw@hotmail.com>
+////
+
+.Navbar {
+  /* 1. Collapsed content (menu-content) (#collapse)
+    =========================================================== */
+  &__menu-content {
+    overflow: hidden;
+    transition: all 300ms ease;
+    max-height: 0;
+    &.expanded {
+      max-height: 500px;
+    }
+  }
+}
