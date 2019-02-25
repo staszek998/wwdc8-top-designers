@@ -10,6 +10,7 @@ import Navbar from "./sections/Navbar/Navbar";
 import Hero from "./sections/Hero/Hero";
 import Circles from "./sections/Circles/Circles";
 import OurTeam from "./sections/OurTeam/OurTeam";
+import Portfolio from "./sections/Portfolio/Portfolio";
 
 // SCSS imports
 import "./App.scss";
@@ -23,6 +24,7 @@ class App extends Component {
         <main>
           <Circles />
           <OurTeam />
+          <Portfolio />
         </main>
       </div>
     );
