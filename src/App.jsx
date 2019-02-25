@@ -9,6 +9,7 @@ import React, { Component } from "react";
 import Navbar from "./sections/Navbar/Navbar";
 import Hero from "./sections/Hero/Hero";
 import Circles from "./sections/Circles/Circles";
+import OurTeam from "./sections/OurTeam/OurTeam";
 
 // SCSS imports
 import "./App.scss";
@@ -21,6 +22,7 @@ class App extends Component {
         <Hero />
         <main>
           <Circles />
+          <OurTeam />
         </main>
       </div>
     );
