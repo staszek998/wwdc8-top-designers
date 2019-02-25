@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+////
+/// This SCSS stylesheet is used to ONLY import the other SCSS modules.
+/// It is the main stylesheet of the app.
+///
+/// One file to RULE them all,
+/// one file to FIND them,
+/// one file to BRING them all,
+/// and in the Sass way MERGE them.
+///
+/// @author Stanisław Gregor <gregor.stanislaw@hotmail.com>
+////
+
+@import "~bootstrap/scss/bootstrap.scss";
+@import "./scss/base/reset";
