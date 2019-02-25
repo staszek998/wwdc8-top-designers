@@ -7,6 +7,7 @@
 // JS imports
 import React, { Component } from "react";
 import Navbar from "./sections/Navbar/Navbar";
+import Hero from "./sections/Hero/Hero";
 
 // SCSS imports
 import "./App.scss";
@@ -16,6 +17,7 @@ class App extends Component {
     return (
       <div>
         <Navbar />
+        <Hero />
       </div>
     );
   }
