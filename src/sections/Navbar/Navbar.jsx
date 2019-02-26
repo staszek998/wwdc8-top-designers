@@ -29,14 +29,14 @@ class Navbar extends Component {
             // Mobile
             <div className="Navbar--mobile row">
               {/* DSGN logotype */}
-              <div className="col-6">
+              <div className="col-6 d-flex justify-content-start align-items-center">
                 <a href="/" className="Navbar__logotype">
                   DSGN
                 </a>
               </div>
 
               {/* Hamburger button / menu trigger */}
-              <div className="col-6">
+              <div className="col-6 d-flex justify-content-end align-items-center">
                 <button
                   className="Navbar__menu-trigger"
                   onClick={this.handleHamburgerClick}
@@ -52,12 +52,23 @@ class Navbar extends Component {
                   this.state.isMenuExpanded ? "expanded" : null
                 }`}
               >
-                <b>menu content</b>
-                <br />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
-                quam assumenda corporis maxime cumque debitis nemo officiis enim
-                magni odit? Unde praesentium commodi corporis assumenda aut
-                voluptas dicta nam repellendus.
+                <ul className="d-flex flex-column justify-content-start align-items-stretch">
+                  <li>
+                    <a href="#about-us">About us</a>
+                  </li>
+                  <li>
+                    <a href="#our-team">Our team</a>
+                  </li>
+                  <li>
+                    <a href="#portfolio">Portolio</a>
+                  </li>
+                  <li>
+                    <a href="#brands">Brands</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contact</a>
+                  </li>
+                </ul>
               </div>
             </div>
           ) : (
