@@ -223,8 +223,16 @@
           transform: translateX(0);
         }
 
+        // Style the text
         a {
           color: white;
+          text-transform: uppercase;
+          &:active,
+          &:focus,
+          &:visited,
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
     }
