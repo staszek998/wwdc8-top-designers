@@ -11,7 +11,7 @@ import React from "react";
 import "./_Hero.scss";
 
 const Hero = () => (
-  <header className="Hero text-center">
+  <header className="Hero border">
     <div className="container">
       <div className="row">
         <div className="col">
