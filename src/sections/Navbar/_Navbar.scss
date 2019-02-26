@@ -24,6 +24,7 @@
   left: 0;
   right: 0;
   width: 100%;
+  z-index: 99;
 
   // Remove the Bootstrap's default margins for the .row.
   margin-left: 0 !important;
@@ -39,6 +40,8 @@
     }
   }
 
+  background-color: white;
+
   &--desktop {
     height: 70px; // => Hero's margin-top: 70px
     > .container {
@@ -52,8 +55,6 @@
   /* 2. Mobile version (#mobile).
     =========================================================== */
   &--mobile {
-    background-color: white;
-
     /* 2.1. Collapsed content (menu-items) (#collapse).
     =========================================================== */
     .Navbar__menu-content {
