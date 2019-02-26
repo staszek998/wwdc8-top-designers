@@ -52,11 +52,12 @@
   /* 2. Mobile version (#mobile).
     =========================================================== */
   &--mobile {
+    background-color: white;
+
     /* 2.1. Collapsed content (menu-items) (#collapse).
     =========================================================== */
     .Navbar__menu-content {
       // General styles.
-      background-color: white;
 
       ul {
         li {
