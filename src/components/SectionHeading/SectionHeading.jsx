@@ -6,6 +6,8 @@
 
 // JS imports
 import React from "react";
+import PropTypes from "prop-types";
+import DSGNHeading from "../DSGNHeading/DSGNHeading";
 
 // SCSS imports
 import "./_SectionHeading.scss";
@@ -14,10 +16,16 @@ const SectionHeading = ({ copy }) => (
   <div className="SectionHeading">
     <div className="container">
       <div className="row">
-        <div className="col-12">SectionHeading</div>
+        <div className="col-12">
+          <DSGNHeading copy={copy} />
+        </div>
       </div>
     </div>
   </div>
 );
+
+SectionHeading.propTypes = {
+  copy: PropTypes.object
+};
 
 export default SectionHeading;

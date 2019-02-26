@@ -13,7 +13,7 @@ import "./_OurTeam.scss";
 
 const OurTeam = () => (
   <section className="OurTeam text-center">
-    <SectionHeading span="Meet us!" heading="OUR TEAM" />
+    <SectionHeading copy={{ top: "Meet us!", main: "OUR TEAM" }} />
   </section>
 );
 
