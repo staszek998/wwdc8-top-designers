@@ -107,7 +107,7 @@ class Navbar extends Component {
                   className="Navbar__menu-trigger"
                   onClick={this.handleHamburgerClick}
                 >
-                  MENU
+                  <span className="hamburger">X</span>MENU
                 </button>
 
                 {/* Menu items */}
