@@ -4,23 +4,57 @@
 /// This SCSS stylesheet is being loaded with the Navbar component.
 ///
 /// Table of contents:
-/// 1. Mobile version (#mobile).
-/// 1.1. Collapsed content (menu-content) (#collapse).
-/// 1.2. Position on the screen (#position).
-/// 2. Desktop version (#desktop).
-/// 2.1. Main row contents (#main-row).
+/// 1. Position on the screen (#position).
+/// 2. Mobile version (#mobile).
+/// 2.1. Collapsed content (menu-content) (#collapse).
+/// 3. Desktop version (#desktop).
+/// 3.1. Main row contents (#main-row).
 ///
 /// @author Stanisław Gregor <gregor.stanislaw@hotmail.com>
 ////
 
+@import "../../scss/helpers/mixins/breakpoints";
+
 .Navbar {
-  /* 1. Mobile version (#mobile).
+  /* 1. Position on the screen (#position).
+      =========================================================== */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  // Remove the Bootstrap's default margins for the .row.
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+  // Set the fixed height for the Navbar.
+  // This declaration is obligatory to reveal the Hero component hidden by the Navbar.
+  // The <div>s height is linked with the Hero's top margin.
+  &--mobile {
+    > div:nth-child(1),
+    > div:nth-child(2) {
+      height: 50px; // => Hero's margin-top: 50px
+    }
+  }
+
+  &--desktop {
+    height: 70px; // => Hero's margin-top: 70px
+    > .container {
+      height: 100%;
+      > .row {
+        height: 100%;
+      }
+    }
+  }
+
+  /* 2. Mobile version (#mobile).
     =========================================================== */
   &--mobile {
     // TMP
     background-color: white;
 
-    /* 1.1. Collapsed content (menu-content) (#collapse).
+    /* 2.1. Collapsed content (menu-content) (#collapse).
     =========================================================== */
     .Navbar__menu-content {
       // General styles.
@@ -45,34 +79,14 @@
         max-height: 500px;
       }
     }
-
-    /* 1.2. Position on the screen (#position).
-      =========================================================== */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-
-    // Remove the Bootstrap's default margins for the .row.
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-
-    // Set the fixed height for the first two <div>s (the 2 visible all the time).
-    // This declaration is obligatory to reveal the Hero component hidden by the Navbar.
-    // The <div>s height is linked with the Hero's top margin.
-    > div:nth-child(1),
-    > div:nth-child(2) {
-      height: 50px;
-    }
   }
 
-  /* 2. Desktop version (#desktop).
+  /* 3. Desktop version (#desktop).
     =========================================================== */
   &--desktop {
     // background: linear-gradient(to right, white 85%, black 85%);
 
-    /* 2.1. Main row contents (#main-row).
+    /* 3.1. Main row contents (#main-row).
     =========================================================== */
     .container {
       > .row {
