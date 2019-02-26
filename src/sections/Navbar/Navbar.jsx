@@ -101,13 +101,38 @@ class Navbar extends Component {
                 <img src={iconLinkedin} alt="" />
               </a>
 
-              {/* Hamburger button / menu trigger */}
-              <button
-                className="Navbar__menu-trigger"
-                onClick={this.handleHamburgerClick}
-              >
-                MENU
-              </button>
+              <div className="menu h-100 d-flex justify-content-center align-items-center">
+                {/* Hamburger button / menu trigger */}
+                <button
+                  className="Navbar__menu-trigger"
+                  onClick={this.handleHamburgerClick}
+                >
+                  MENU
+                </button>
+
+                {/* Menu items */}
+                <ul
+                  className={`menu-items d-flex flex-column justify-content-start align-items-stretch ${
+                    this.state.isMenuExpanded ? "expanded" : ""
+                  }`}
+                >
+                  <li>
+                    <a href="#about-us">About us</a>
+                  </li>
+                  <li>
+                    <a href="#our-team">Our team</a>
+                  </li>
+                  <li>
+                    <a href="#portfolio">Portolio</a>
+                  </li>
+                  <li>
+                    <a href="#brands">Brands</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
