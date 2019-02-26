@@ -22,7 +22,7 @@ class Navbar extends Component {
   };
 
   render() {
-    return window.innerWidth <= 768 ? (
+    return window.innerWidth <= 576 ? (
       // Mobile
       <nav className="Navbar--mobile row">
         {/* DSGN logotype */}
@@ -69,7 +69,7 @@ class Navbar extends Component {
       </nav>
     ) : (
       // Desktop
-      <div className="Navbar--desktop row">
+      <div className="Navbar--desktop">
         <nav>Navbar--desktop</nav>
       </div>
     );
