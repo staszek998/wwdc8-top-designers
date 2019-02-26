@@ -30,7 +30,7 @@ class Navbar extends Component {
             <div className="Navbar--mobile row">
               {/* DSGN logotype */}
               <div className="col-6 d-flex justify-content-start align-items-center">
-                <a href="/" className="Navbar__logotype">
+                <a href="#" className="Navbar__logotype">
                   DSGN
                 </a>
               </div>
@@ -46,7 +46,6 @@ class Navbar extends Component {
               </div>
 
               {/* Menu content */}
-
               <div
                 className={`Navbar__menu-content col-12 ${
                   this.state.isMenuExpanded ? "expanded" : null
