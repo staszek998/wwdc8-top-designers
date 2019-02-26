@@ -10,7 +10,7 @@ import React from "react";
 // SCSS imports
 import "./_SectionHeading.scss";
 
-const SectionHeading = ({ span, heading }) => (
+const SectionHeading = ({ copy }) => (
   <div className="SectionHeading">
     <div className="container">
       <div className="row">
