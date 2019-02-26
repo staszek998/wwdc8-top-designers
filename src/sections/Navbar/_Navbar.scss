@@ -55,11 +55,13 @@
   /* 2. Mobile version (#mobile).
     =========================================================== */
   &--mobile {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     /* 2.1. Collapsed content (menu-items) (#collapse).
     =========================================================== */
     .Navbar__menu-content {
       // General styles.
-
       ul {
         li {
           // Center the text within the menu links.
