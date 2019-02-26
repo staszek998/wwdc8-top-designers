@@ -6,6 +6,7 @@
 
 // JS imports
 import React from "react";
+import DSGNHeading from "../../components/DSGNHeading/DSGNHeading";
 
 // SCSS imports
 import "./_Hero.scss";
@@ -16,22 +17,9 @@ const Hero = () => (
       <div className="row">
         <div className="col">
           <div className="h-100 d-flex flex-column justify-content-center align-items-center">
-            {/* DSGN Heading */}
-            <div className="dsgn-heading">
-              <div className="dsgn-heading__top-line">
-                <div className="spacer spacer--left" role="presentation">
-                  <hr />
-                </div>
-                <span className="copy">Need our help?</span>
-                <div className="spacer spacer--right" role="presentation">
-                  <hr />
-                </div>
-              </div>
-
-              <div className="dsgn-heading__bottom-line">
-                <h1>TOP DESIGNERS</h1>
-              </div>
-            </div>
+            <DSGNHeading
+              copy={{ top: "Need our help?", main: "TOP DESIGNERS" }}
+            />
 
             {/* CTA button */}
             <a className="cta" href="#portfolio">
