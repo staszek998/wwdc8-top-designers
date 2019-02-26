@@ -6,10 +6,10 @@
 
 // JS imports
 import React from "react";
+import SectionHeading from "../../components/SectionHeading/SectionHeading";
 
 // SCSS imports
 import "./_OurTeam.scss";
-import SectionHeading from "../../components/SectionHeading/SectionHeading";
 
 const OurTeam = () => (
   <section className="OurTeam text-center">
