@@ -3,22 +3,13 @@
 ////
 /// This SCSS stylesheet is being loaded with the Navbar component.
 ///
-/// Table of contents:
-/// 1. Position on the screen (#position).
-/// 2. Mobile version (#mobile).
-/// 2.1. Collapsed content (menu-items) (#collapse-mobile).
-/// 3. Desktop version (#desktop).
-/// 3.1. Main row contents (#main-row).
-/// 3.2. Collapsed content (menu-items) (#collapse-desktop).
-///
 /// @author Stanisław Gregor <gregor.stanislaw@hotmail.com>
 ////
 
 @import "../../scss/helpers/mixins/breakpoints";
 
 .Navbar {
-  /* 1. Position on the screen (#position).
-      =========================================================== */
+  // Position on the screen.
   position: fixed;
   top: 0;
   left: 0;
@@ -52,15 +43,12 @@
     }
   }
 
-  /* 2. Mobile version (#mobile).
-    =========================================================== */
+  // Mobile version.
   &--mobile {
     padding-top: 10px;
     padding-bottom: 10px;
-    box-shadow: 0 5px 35px -5px #333;
 
-    /* 2.1. Collapsed content (menu-items) (#collapse).
-    =========================================================== */
+    // Collapsed content (menu-items).
     .Navbar__menu-content {
       // General styles.
       ul {
@@ -86,11 +74,9 @@
     }
   }
 
-  /* 3. Desktop version (#desktop).
-    =========================================================== */
+  // Desktop version.
   &--desktop {
-    /* 3.1. Main row contents (#main-row).
-    =========================================================== */
+    // Main row contents.
     .container {
       > .row {
         // Style the social media links.
@@ -116,8 +102,7 @@
       }
     }
 
-    /* 3.2. Collapsed content (menu-items) (#collapse-desktop).
-      =========================================================== */
+    // Collapsed content (menu-items).
     .menu {
       position: relative;
       background-color: black;
