@@ -4,7 +4,8 @@
 /// This SCSS stylesheet is being loaded with the Hero component.
 ///
 /// Table of contents:
-/// 1. Handling the mobile Navbar (#mobile-navbar).
+/// 1. Handling the fixed Navbar (#fixed-navbar).
+/// 2. Content layout (#content-layout).
 ///
 /// @author Stanisław Gregor <gregor.stanislaw@hotmail.com>
 ////
@@ -12,10 +13,14 @@
 @import "../../scss/helpers/mixins/breakpoints";
 
 .Hero {
-  /* 1. Handling the mobile Navbar (#mobile-navbar).
+  /* 1. Handling the fixed Navbar (#fixed-navbar).
     =========================================================== */
   margin-top: 50px;
   @include media-breakpoint-up(sm) {
     margin-top: 70px;
   }
+
+  /* 2. Content layout (#content-layout).
+    =========================================================== */
+    
 }
