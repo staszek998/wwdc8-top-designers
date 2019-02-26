@@ -8,6 +8,7 @@
 /// 1.1. Collapsed content (menu-content) (#collapse).
 /// 1.2. Position on the screen (#position).
 /// 2. Desktop version (#desktop).
+/// 2.1. Main row contents (#main-row).
 ///
 /// @author Stanisław Gregor <gregor.stanislaw@hotmail.com>
 ////
@@ -70,5 +71,32 @@
     =========================================================== */
   &--desktop {
     // background: linear-gradient(to right, white 85%, black 85%);
+
+    /* 2.1. Main row contents (#main-row).
+    =========================================================== */
+    .container {
+      > .row {
+        // Style the social media links.
+        .social-media-icon {
+          // Set the dimensions.
+          width: 30px;
+          height: 30px;
+          padding: 5px;
+
+          // Position the actual icon.
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          // Scale the icon.
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+      }
+    }
   }
 }
