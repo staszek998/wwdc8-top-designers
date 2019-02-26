@@ -74,6 +74,19 @@
         max-height: 500px;
       }
     }
+
+    // CSS Hamburger
+    .hamburger {
+      // Remove the Bootstrap's button outline.
+      outline: none;
+      border: none;
+      &:focus {
+        outline: none;
+        border: none;
+      }
+
+      // Remove the CSS Hamburgers' default padding.
+    }
   }
 
   // Desktop version.

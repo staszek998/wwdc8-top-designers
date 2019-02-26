@@ -43,14 +43,14 @@ class Navbar extends Component {
         {/* Hamburger button / menu trigger */}
         <div className="col-6 d-flex justify-content-end align-items-center">
           <button
-            class={`Navbar__menu-trigger hamburger hamburger--emphatic ${
+            className={`Navbar__menu-trigger hamburger hamburger--emphatic ${
               this.state.isMenuExpanded ? "is-active" : ""
             }`}
             type="button"
             onClick={this.handleHamburgerClick}
           >
-            <span class="hamburger-box">
-              <span class="hamburger-inner" />
+            <span className="hamburger-box">
+              <span className="hamburger-inner" />
             </span>
           </button>
         </div>
