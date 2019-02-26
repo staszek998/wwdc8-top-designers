@@ -223,6 +223,11 @@
           transform: translateX(0);
         }
 
+        // Make space between the <li>s.
+        li {
+          margin-top: 10px;
+        }
+
         // Style the text
         a {
           color: white;
