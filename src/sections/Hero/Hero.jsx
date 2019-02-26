@@ -19,9 +19,13 @@ const Hero = () => (
             {/* DSGN Heading */}
             <div className="dsgn-heading">
               <div className="dsgn-heading__top-line">
-                <hr className="spacer spacer--left" />
+                <div className="spacer spacer--left" role="presentation">
+                  <hr />
+                </div>
                 <span className="copy">Need our help?</span>
-                <hr className="spacer spacer--right" />
+                <div className="spacer spacer--right" role="presentation">
+                  <hr />
+                </div>
               </div>
 
               <div className="dsgn-heading__bottom-line">
@@ -30,7 +34,7 @@ const Hero = () => (
             </div>
 
             {/* CTA button */}
-            <a className="cts" href="#portfolio">
+            <a className="cta" href="#portfolio">
               CHECK US!
             </a>
 
