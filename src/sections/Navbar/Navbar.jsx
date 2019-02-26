@@ -6,7 +6,6 @@
 
 // JS imports
 import React, { Component } from "react";
-import MediaQuery from "react-responsive";
 
 // SCSS imports
 import "./_Navbar.scss";
@@ -26,8 +25,8 @@ class Navbar extends Component {
     return (
       <nav className="Navbar border">
         <div className="container">
-          {/* Mobile */}
-          <MediaQuery query="(max-device-width: 765px)">
+          {window.innerWidth <= 768 ? (
+            // Mobile
             <div className="Navbar--mobile row">
               {/* DSGN logotype */}
               <div className="col-6">
@@ -62,12 +61,10 @@ class Navbar extends Component {
                 </div>
               </div>
             </div>
-          </MediaQuery>
-
-          {/* Desktop */}
-          <MediaQuery query="(min-device-width: 768px)">
+          ) : (
+            // Desktop
             <div className="Navbar--desktop row">Navbar--desktop</div>
-          </MediaQuery>
+          )}
         </div>
       </nav>
     );
