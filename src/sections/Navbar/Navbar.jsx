@@ -30,7 +30,7 @@ class Navbar extends Component {
   render() {
     return window.innerWidth <= 576 ? (
       // Mobile
-      <nav className="Navbar Navbar--mobile row">
+      <nav className="Navbar Navbar--mobile row border">
         {/* DSGN logotype */}
         <div className="col-6 d-flex justify-content-start align-items-center">
           <a href="#" className="Navbar__logotype">
@@ -75,7 +75,7 @@ class Navbar extends Component {
       </nav>
     ) : (
       // Desktop
-      <div className="Navbar Navbar--desktop">
+      <div className="Navbar Navbar--desktop border">
         <nav className="container">
           <div className="row">
             {/* DSGN logotype */}
