@@ -10,6 +10,12 @@ import React, { Component } from "react";
 // SCSS imports
 import "./_Navbar.scss";
 
+// Images
+import iconFacebook from "../../assets/sections/Navbar/icons/facebook.png";
+import iconInstagram from "../../assets/sections/Navbar/icons/instagram.png";
+import iconTwitter from "../../assets/sections/Navbar/icons/twitter.png";
+import iconLinkedin from "../../assets/sections/Navbar/icons/linkedin.png";
+
 class Navbar extends Component {
   state = {
     isMenuExpanded: false
@@ -70,7 +76,41 @@ class Navbar extends Component {
     ) : (
       // Desktop
       <div className="Navbar--desktop">
-        <nav>Navbar--desktop</nav>
+        <nav className="container">
+          <div className="row">
+            {/* DSGN logotype */}
+            <div className="col-6 d-flex justify-content-start align-items-center">
+              <a href="#" className="Navbar__logotype">
+                DSGN
+              </a>
+            </div>
+
+            {/* Right column */}
+            <div className="col-6 d-flex justify-content-end align-items-center">
+              {/* Social icons */}
+              <a href="" className="social-media-icon">
+                <img src={iconFacebook} alt="" />
+              </a>
+              <a href="" className="social-media-icon">
+                <img src={iconInstagram} alt="" />
+              </a>
+              <a href="" className="social-media-icon">
+                <img src={iconTwitter} alt="" />
+              </a>
+              <a href="" className="social-media-icon">
+                <img src={iconLinkedin} alt="" />
+              </a>
+
+              {/* Hamburger button / menu trigger */}
+              <button
+                className="Navbar__menu-trigger"
+                onClick={this.handleHamburgerClick}
+              >
+                MENU
+              </button>
+            </div>
+          </div>
+        </nav>
       </div>
     );
   }

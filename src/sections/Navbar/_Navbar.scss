@@ -7,6 +7,7 @@
 /// 1. Mobile version (#mobile).
 /// 1.1. Collapsed content (menu-content) (#collapse).
 /// 1.2. Position on the screen (#position).
+/// 2. Desktop version (#desktop).
 ///
 /// @author Stanisław Gregor <gregor.stanislaw@hotmail.com>
 ////
@@ -63,5 +64,11 @@
     > div:nth-child(2) {
       height: 50px;
     }
+  }
+
+  /* 2. Desktop version (#desktop).
+    =========================================================== */
+  &--desktop {
+    // background: linear-gradient(to right, white 85%, black 85%);
   }
 }
