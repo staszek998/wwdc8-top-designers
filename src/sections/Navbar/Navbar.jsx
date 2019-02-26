@@ -9,12 +9,14 @@ import React, { Component } from "react";
 
 // SCSS imports
 import "./_Navbar.scss";
+import "../../scss/vendor/css-hamburgers/_hamburgers.scss";
 
 // Images
 import iconFacebook from "../../assets/sections/Navbar/icons/facebook.png";
 import iconInstagram from "../../assets/sections/Navbar/icons/instagram.png";
 import iconTwitter from "../../assets/sections/Navbar/icons/twitter.png";
 import iconLinkedin from "../../assets/sections/Navbar/icons/linkedin.png";
+import dsgnLogotype from "../../assets/sections/Navbar/dsgn-logotype.png";
 
 class Navbar extends Component {
   state = {
@@ -30,21 +32,26 @@ class Navbar extends Component {
   render() {
     return window.innerWidth <= 576 ? (
       // Mobile
-      <nav className="Navbar Navbar--mobile row border">
+      <nav className="Navbar Navbar--mobile row">
         {/* DSGN logotype */}
         <div className="col-6 d-flex justify-content-start align-items-center">
           <a href="#" className="Navbar__logotype">
-            DSGN
+            <img src={dsgnLogotype} alt="TOP DESIGNERS logotype" />
           </a>
         </div>
 
         {/* Hamburger button / menu trigger */}
         <div className="col-6 d-flex justify-content-end align-items-center">
           <button
-            className="Navbar__menu-trigger"
+            className={`Navbar__menu-trigger hamburger hamburger--collapse ${
+              this.state.isMenuExpanded ? "is-active" : ""
+            }`}
+            type="button"
             onClick={this.handleHamburgerClick}
           >
-            MENU
+            <span className="hamburger-box">
+              <span className="hamburger-inner" />
+            </span>
           </button>
         </div>
 
@@ -75,13 +82,13 @@ class Navbar extends Component {
       </nav>
     ) : (
       // Desktop
-      <div className="Navbar Navbar--desktop border">
+      <div className="Navbar Navbar--desktop">
         <nav className="container">
           <div className="row">
             {/* DSGN logotype */}
             <div className="col-6 d-flex justify-content-start align-items-center">
               <a href="#" className="Navbar__logotype">
-                DSGN
+                <img src={dsgnLogotype} alt="TOP DESIGNERS logotype" />
               </a>
             </div>
 
@@ -107,7 +114,18 @@ class Navbar extends Component {
                   className="Navbar__menu-trigger"
                   onClick={this.handleHamburgerClick}
                 >
-                  <span className="hamburger">X</span>MENU
+                  <div
+                    className={`hamburger hamburger--collapse ${
+                      this.state.isMenuExpanded ? "is-active" : ""
+                    }`}
+                    type="button"
+                    onClick={this.handleHamburgerClick}
+                  >
+                    <span className="hamburger-box">
+                      <span className="hamburger-inner" />
+                    </span>
+                  </div>
+                  <span>MENU</span>
                 </button>
 
                 {/* Menu items */}

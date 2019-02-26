@@ -3,22 +3,13 @@
 ////
 /// This SCSS stylesheet is being loaded with the Navbar component.
 ///
-/// Table of contents:
-/// 1. Position on the screen (#position).
-/// 2. Mobile version (#mobile).
-/// 2.1. Collapsed content (menu-items) (#collapse-mobile).
-/// 3. Desktop version (#desktop).
-/// 3.1. Main row contents (#main-row).
-/// 3.2. Collapsed content (menu-items) (#collapse-desktop).
-///
 /// @author Stanisław Gregor <gregor.stanislaw@hotmail.com>
 ////
 
 @import "../../scss/helpers/mixins/breakpoints";
 
 .Navbar {
-  /* 1. Position on the screen (#position).
-      =========================================================== */
+  // Position on the screen.
   position: fixed;
   top: 0;
   left: 0;
@@ -40,7 +31,9 @@
     }
   }
 
+  // Styling.
   background-color: white;
+  box-shadow: 0 5px 35px -5px #333;
 
   &--desktop {
     height: 70px; // => Hero's margin-top: 70px
@@ -52,21 +45,34 @@
     }
   }
 
-  /* 2. Mobile version (#mobile).
-    =========================================================== */
+  // Mobile version.
   &--mobile {
-    /* 2.1. Collapsed content (menu-items) (#collapse).
-    =========================================================== */
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    // Collapsed content (menu-items).
     .Navbar__menu-content {
       // General styles.
-
       ul {
         li {
-          // Center the text within the menu links.
+          // Make space between the <li>s.
+          margin-top: 10px;
+
           a {
+            // Center the text within the menu links.
             display: block;
             width: 100%;
             text-align: center;
+
+            // Style the text.
+            color: black;
+            text-transform: uppercase;
+            &:active,
+            &:focus,
+            &:visited,
+            &:hover {
+              text-decoration: none;
+            }
           }
         }
       }
@@ -81,13 +87,22 @@
         max-height: 500px;
       }
     }
+
+    // CSS Hamburger
+    .hamburger {
+      // Remove the Bootstrap's button outline.
+      outline: none;
+      border: none;
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
   }
 
-  /* 3. Desktop version (#desktop).
-    =========================================================== */
+  // Desktop version.
   &--desktop {
-    /* 3.1. Main row contents (#main-row).
-    =========================================================== */
+    // Main row contents.
     .container {
       > .row {
         // Style the social media links.
@@ -113,8 +128,56 @@
       }
     }
 
-    /* 3.2. Collapsed content (menu-items) (#collapse-desktop).
-      =========================================================== */
+    // Menu trigger.
+    .Navbar__menu-trigger {
+      // Remove the default buttons' styling
+      appearance: none;
+      border: none;
+      outline: none;
+      background: transparent;
+
+      // Remove the Bootstrap's default button outline
+      &:focus {
+        outline: none;
+        border: none;
+      }
+
+      // Lay-out the content
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+
+      // Style the text
+      color: white;
+
+      .hamburger {
+        // Add space between the "MENU" text
+        margin-right: 20px;
+
+        // Remove the default buttons' styling
+        background: transparent;
+        appearance: none;
+
+        // Lay-out the content
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+        .hamburger-inner {
+          &,
+          &::before,
+          &::after {
+            background-color: white;
+          }
+        }
+      }
+    }
+
+    // Collapsed content (menu-items).
     .menu {
       position: relative;
       background-color: black;
@@ -160,13 +223,22 @@
           transform: translateX(0);
         }
 
+        // Make space between the <li>s.
+        li {
+          margin-top: 10px;
+        }
+
+        // Style the text
         a {
           color: white;
+          text-transform: uppercase;
+          &:active,
+          &:focus,
+          &:visited,
+          &:hover {
+            text-decoration: none;
+          }
         }
-      }
-
-      .hamburger {
-        margin-right: 20px;
       }
     }
   }
