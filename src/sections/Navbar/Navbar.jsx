@@ -46,19 +46,18 @@ class Navbar extends Component {
               </div>
 
               {/* Menu content */}
+
               <div
-                className={`Navbar__menu-content row ${
+                className={`Navbar__menu-content col-12 ${
                   this.state.isMenuExpanded ? "expanded" : null
                 }`}
               >
-                <div className="col-12">
-                  <b>menu content</b>
-                  <br />
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Iure, quam assumenda corporis maxime cumque debitis nemo
-                  officiis enim magni odit? Unde praesentium commodi corporis
-                  assumenda aut voluptas dicta nam repellendus.
-                </div>
+                <b>menu content</b>
+                <br />
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
+                quam assumenda corporis maxime cumque debitis nemo officiis enim
+                magni odit? Unde praesentium commodi corporis assumenda aut
+                voluptas dicta nam repellendus.
               </div>
             </div>
           ) : (
