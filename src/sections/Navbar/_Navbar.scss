@@ -55,11 +55,24 @@
       // General styles.
       ul {
         li {
-          // Center the text within the menu links.
+          // Make space between the <li>s.
+          margin-top: 10px;
+
           a {
+            // Center the text within the menu links.
             display: block;
             width: 100%;
             text-align: center;
+
+            // Style the text.
+            color: black;
+            text-transform: uppercase;
+            &:active,
+            &:focus,
+            &:visited,
+            &:hover {
+              text-decoration: none;
+            }
           }
         }
       }
