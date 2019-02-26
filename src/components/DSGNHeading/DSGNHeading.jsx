@@ -14,8 +14,8 @@ import PropTypes from "prop-types";
 import "./_DSGNHeading.scss";
 
 const DSGNHeading = ({ copy }) => (
-  <div className="dsgn-heading">
-    <div className="dsgn-heading__top-line">
+  <div className="DSGNHeading">
+    <div className="DSGNHeading__top-line">
       <div className="spacer spacer--left" role="presentation">
         <hr />
       </div>
@@ -25,7 +25,7 @@ const DSGNHeading = ({ copy }) => (
       </div>
     </div>
 
-    <div className="dsgn-heading__bottom-line">
+    <div className="DSGNHeading__bottom-line">
       <h1>{copy.main}</h1>
     </div>
   </div>
