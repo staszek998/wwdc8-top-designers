@@ -51,7 +51,17 @@
     left: 0;
     right: 0;
     width: 100%;
+
+    // Remove the Bootstrap's default margins for the .row.
     margin-left: 0 !important;
     margin-right: 0 !important;
+
+    // Set the fixed height for the first two <div>s (the 2 visible all the time).
+    // This declaration is obligatory to reveal the Hero component hidden by the Navbar.
+    // The <div>s height is linked with the Hero's top margin.
+    > div:nth-child(1),
+    > div:nth-child(2) {
+      height: 50px;
+    }
   }
 }
