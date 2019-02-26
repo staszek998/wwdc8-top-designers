@@ -16,8 +16,10 @@ const SectionHeading = ({ copy }) => (
   <div className="SectionHeading">
     <div className="container">
       <div className="row">
-        <div className="col-12">
-          <DSGNHeading copy={copy} />
+        <div className="col-12 py-3 px-md-3">
+          <div className="d-flex justify-content-center align-items-center p-5 border">
+            <DSGNHeading copy={copy} />
+          </div>
         </div>
       </div>
     </div>
