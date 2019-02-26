@@ -9,6 +9,7 @@ import React, { Component } from "react";
 
 // SCSS imports
 import "./_Navbar.scss";
+import "../../scss/vendor/css-hamburgers/_hamburgers.scss";
 
 // Images
 import iconFacebook from "../../assets/sections/Navbar/icons/facebook.png";
@@ -42,10 +43,15 @@ class Navbar extends Component {
         {/* Hamburger button / menu trigger */}
         <div className="col-6 d-flex justify-content-end align-items-center">
           <button
-            className="Navbar__menu-trigger"
+            class={`Navbar__menu-trigger hamburger hamburger--emphatic ${
+              this.state.isMenuExpanded ? "is-active" : ""
+            }`}
+            type="button"
             onClick={this.handleHamburgerClick}
           >
-            MENU
+            <span class="hamburger-box">
+              <span class="hamburger-inner" />
+            </span>
           </button>
         </div>
 
