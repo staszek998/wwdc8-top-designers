@@ -10,12 +10,27 @@
 ////
 
 .Navbar {
-  /* 1. Collapsed content (menu-content) (#collapse)
+  /* 1. Collapsed content (menu-content) (#collapse).
     =========================================================== */
   &__menu-content {
+    // General styles.
+    ul {
+      li {
+        // Center the text within the menu links.
+        a {
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    // Collapsed state.
     overflow: hidden;
     transition: all 300ms ease;
     max-height: 0;
+
+    // Expanded state.
     &.expanded {
       max-height: 500px;
     }
