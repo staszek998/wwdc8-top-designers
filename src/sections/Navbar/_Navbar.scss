@@ -128,6 +128,55 @@
       }
     }
 
+    // Menu trigger.
+    .Navbar__menu-trigger {
+      // Remove the default buttons' styling
+      appearance: none;
+      border: none;
+      outline: none;
+      background: transparent;
+
+      // Remove the Bootstrap's default button outline
+      &:focus {
+        outline: none;
+        border: none;
+      }
+
+      // Lay-out the content
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+
+      // Style the text
+      color: white;
+
+      .hamburger {
+        // Add space between the "MENU" text
+        margin-right: 20px;
+
+        // Remove the default buttons' styling
+        background: transparent;
+        appearance: none;
+
+        // Lay-out the content
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+        .hamburger-inner {
+          &,
+          &::before,
+          &::after {
+            background-color: white;
+          }
+        }
+      }
+    }
+
     // Collapsed content (menu-items).
     .menu {
       position: relative;
@@ -177,10 +226,6 @@
         a {
           color: white;
         }
-      }
-
-      .hamburger {
-        margin-right: 20px;
       }
     }
   }

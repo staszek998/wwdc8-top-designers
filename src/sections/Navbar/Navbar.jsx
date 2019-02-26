@@ -32,7 +32,7 @@ class Navbar extends Component {
   render() {
     return window.innerWidth <= 576 ? (
       // Mobile
-      <nav className="Navbar Navbar--mobile row border">
+      <nav className="Navbar Navbar--mobile row">
         {/* DSGN logotype */}
         <div className="col-6 d-flex justify-content-start align-items-center">
           <a href="#" className="Navbar__logotype">
@@ -82,7 +82,7 @@ class Navbar extends Component {
       </nav>
     ) : (
       // Desktop
-      <div className="Navbar Navbar--desktop border">
+      <div className="Navbar Navbar--desktop">
         <nav className="container">
           <div className="row">
             {/* DSGN logotype */}
@@ -114,7 +114,18 @@ class Navbar extends Component {
                   className="Navbar__menu-trigger"
                   onClick={this.handleHamburgerClick}
                 >
-                  <span className="hamburger">X</span>MENU
+                  <div
+                    className={`hamburger hamburger--collapse ${
+                      this.state.isMenuExpanded ? "is-active" : ""
+                    }`}
+                    type="button"
+                    onClick={this.handleHamburgerClick}
+                  >
+                    <span className="hamburger-box">
+                      <span className="hamburger-inner" />
+                    </span>
+                  </div>
+                  <span>MENU</span>
                 </button>
 
                 {/* Menu items */}
