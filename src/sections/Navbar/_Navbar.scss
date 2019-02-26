@@ -123,21 +123,30 @@
 
       .menu-items {
         position: absolute;
+
+        // Equal to the parent's height.
         top: 70px;
+
         left: 0;
+
+        // Random width. Just to cover the page.
         width: 500px;
+
+        // Hide the element outside the right side of the screen.
         transform: translateX(500px);
         transition: all 300ms ease;
+
         background-color: black;
         padding: 0 30px 30px 30px;
         border-bottom-left-radius: 10px;
 
-        a {
-          color: white;
-        }
-
+        // Slide the element from right to left.
         &.expanded {
           transform: translateX(0);
+        }
+
+        a {
+          color: white;
         }
       }
 
