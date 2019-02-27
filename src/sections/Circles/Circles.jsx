@@ -18,7 +18,7 @@ const Column = ({
   innerNum,
   innerText
 }) => (
-  <li className="col-12 col-md-4 pb-5 pb-md-0">
+  <li className="Circles__Column col-12 col-md-4 pb-5 pb-md-0">
     <div className="d-flex flex-column justify-content-start align-items-center">
       <div className="circle-container">
         <CircleProgress
@@ -34,7 +34,7 @@ const Column = ({
           </p>
         </div>
       </div>
-      <p>
+      <p className="Circles__Column__description pt-3">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius itaque
         aspernatur explicabo!
       </p>

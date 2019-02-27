@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .Circles {
-  // Style the circles' inner content.
+  // Style the circles' inner content (.num and .description elements).
   .circle-container {
     position: relative;
     &__inner {
@@ -32,7 +32,8 @@
     }
   }
 
-  > .container > .row > .col-12 {
+  // Set different colour of the span.num for each .Circles__Column.
+  &__Column {
     &:nth-child(1) {
       .num {
         color: #f34739;
@@ -50,5 +51,13 @@
         color: #152b3c;
       }
     }
+  }
+
+  // Style the main .Column text (description).
+  &__Column__description {
+    font-size: 18px;
+    color: #454545;
+    font-weight: 400;
+    text-align: center;
   }
 }
