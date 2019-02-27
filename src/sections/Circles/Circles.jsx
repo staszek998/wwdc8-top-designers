@@ -33,9 +33,7 @@ const Circles = () => (
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              itaque aspernatur explicabo! Accusantium suscipit dolorum
-              assumenda eaque harum quo id aliquam. Perspiciatis, quod corrupti
-              ab consectetur esse itaque nesciunt molestiae.
+              itaque aspernatur explicabo!
             </p>
           </div>
         </li>
@@ -57,9 +55,7 @@ const Circles = () => (
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              itaque aspernatur explicabo! Accusantium suscipit dolorum
-              assumenda eaque harum quo id aliquam. Perspiciatis, quod corrupti
-              ab consectetur esse itaque nesciunt molestiae.
+              itaque aspernatur explicabo!
             </p>
           </div>
         </li>
@@ -81,9 +77,7 @@ const Circles = () => (
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              itaque aspernatur explicabo! Accusantium suscipit dolorum
-              assumenda eaque harum quo id aliquam. Perspiciatis, quod corrupti
-              ab consectetur esse itaque nesciunt molestiae.
+              itaque aspernatur explicabo!
             </p>
           </div>
         </li>
