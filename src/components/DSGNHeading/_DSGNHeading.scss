@@ -32,6 +32,9 @@
 
         // Remove the Bootstrap's default margins.
         margin: 0;
+
+        // Make the line white instead of light-gray
+        border-color: white;
       }
 
       &--left {
