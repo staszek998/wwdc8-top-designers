@@ -15,14 +15,133 @@
     margin-top: 70px;
   }
 
-  // Add space around the DSGNHeading.
+  // Add background image.
+  background-image: url("../../assets/images/sections/Hero/bg--mobile.png");
+  @include media-breakpoint-up(lg) {
+    background-image: url("../../assets/images/sections/Hero/bg--desktop.png");
+  }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   .DSGNHeading {
+    // Add space around the DSGNHeading.
     margin-top: 150px;
+    @include media-breakpoint-up(lg) {
+      margin-top: 200px;
+    }
     margin-bottom: 30px;
+
+    // Style the text.
+    &__top-line,
+    &__bottom-line {
+      color: #ffffff;
+      font-family: "Quicksand";
+      text-align: center;
+    }
+
+    &__top-line .copy,
+    &__bottom-line h1 {
+      text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+    }
+
+    &__top-line {
+      .copy {
+        font-size: 18px;
+        font-weight: 300;
+        @include media-breakpoint-up(md) {
+          font-size: 30px;
+        }
+      }
+    }
+
+    &__bottom-line {
+      h1 {
+        font-size: 36px;
+        font-weight: 700;
+        @include media-breakpoint-up(md) {
+          font-size: 72px;
+        }
+      }
+    }
   }
 
-  // Add space between the CTA button and the CTS (call-to-scroll).
   .cta {
-    margin-bottom: 100px;
+    // Add space between the CTA button and the CTS (call-to-scroll).
+    margin-bottom: 40px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 100px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 150px;
+    }
+
+    // Style the button
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Quicksand";
+    font-weight: 400;
+    text-align: center;
+    border: 2px solid #ffffff;
+    padding: 5px 20px;
+    @include media-breakpoint-up(lg) {
+      padding: 10px 40px;
+    }
+    line-height: 1;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+
+    // Create the pill-like shape.
+    border-radius: 100px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  // Create the double chevron down
+  .scroll {
+    // Remove the browser button styling.
+    appearance: none;
+    border: none;
+    background: none;
+
+    // Remove the Bootstrap's default outline
+    outline: none;
+    &:focus {
+      outline: none;
+    }
+
+    width: 50px;
+    height: 50px;
+    position: relative;
+    &::before,
+    &::after {
+      border-style: solid;
+      border-color: white;
+      border-width: 2px 2px 0 0;
+      width: 15px;
+      height: 15px;
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: rotate(135deg) translateX(70%);
+    }
+
+    // Top chevron
+    &::before {
+      top: -5px;
+    }
+
+    // Bottom chevron
+    &::after {
+      top: 10px;
+    }
   }
 }
