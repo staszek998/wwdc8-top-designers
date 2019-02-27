@@ -36,7 +36,7 @@
 
     &__top-line {
       .copy {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 300;
         @include media-breakpoint-up(md) {
           font-size: 30px;
@@ -46,7 +46,7 @@
 
     &__bottom-line {
       h1 {
-        font-size: 56px;
+        font-size: 36px;
         font-weight: 700;
         @include media-breakpoint-up(md) {
           font-size: 72px;
