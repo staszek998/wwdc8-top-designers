@@ -12,11 +12,11 @@ import "./_Navbar.scss";
 import "../../scss/vendor/css-hamburgers/_hamburgers.scss";
 
 // Images
-import iconFacebook from "../../assets/sections/Navbar/icons/facebook.png";
-import iconInstagram from "../../assets/sections/Navbar/icons/instagram.png";
-import iconTwitter from "../../assets/sections/Navbar/icons/twitter.png";
-import iconLinkedin from "../../assets/sections/Navbar/icons/linkedin.png";
-import dsgnLogotype from "../../assets/sections/Navbar/dsgn-logotype.png";
+import iconFacebook from "../../assets/images/sections/Navbar/icons/facebook.png";
+import iconInstagram from "../../assets/images/sections/Navbar/icons/instagram.png";
+import iconTwitter from "../../assets/images/sections/Navbar/icons/twitter.png";
+import iconLinkedin from "../../assets/images/sections/Navbar/icons/linkedin.png";
+import dsgnLogotype from "../../assets/images/sections/Navbar/dsgn-logotype.png";
 
 class Navbar extends Component {
   state = {
