@@ -12,7 +12,7 @@ import DSGNHeading from "../../components/DSGNHeading/DSGNHeading";
 import "./_Hero.scss";
 
 const Hero = () => (
-  <header className="Hero border">
+  <header className="Hero">
     <div className="container">
       <div className="row">
         <div className="col">
