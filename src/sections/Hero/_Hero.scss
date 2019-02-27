@@ -72,4 +72,37 @@
     // Create the pill-like shape.
     border-radius: 100px;
   }
+
+  // Create the double chevron down
+  .scroll {
+    // Remove the browser button styling.
+    appearance: none;
+    border: none;
+    background: none;
+
+    // Remove the Bootstrap's default outline
+    outline: none;
+    &:focus {
+      outline: none;
+    }
+
+    &,
+    &::before {
+      border-style: solid;
+      border-color: white;
+      border-width: 2px 2px 0 0;
+      width: 20px;
+      height: 20px;
+    }
+
+    transform: rotate(135deg);
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: -65%;
+    }
+  }
 }

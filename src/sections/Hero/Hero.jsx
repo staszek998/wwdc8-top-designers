@@ -27,7 +27,7 @@ const Hero = () => (
             </a>
 
             {/* CTS (call to scroll) */}
-            <button className="scroll">scroll</button>
+            <button className="scroll" />
           </div>
         </div>
       </div>
