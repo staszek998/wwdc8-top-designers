@@ -57,7 +57,7 @@
 
   .cta {
     // Add space between the CTA button and the CTS (call-to-scroll).
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 
     // Style the button
     font-size: 14px;
@@ -71,6 +71,12 @@
 
     // Create the pill-like shape.
     border-radius: 100px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
   }
 
   // Create the double chevron down
