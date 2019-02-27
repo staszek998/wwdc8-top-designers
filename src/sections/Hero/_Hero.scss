@@ -19,6 +19,23 @@
   .DSGNHeading {
     margin-top: 150px;
     margin-bottom: 30px;
+
+    &__top-line,
+    &__bottom-line {
+      color: #ffffff;
+      font-family: "Quicksand";
+      text-align: center;
+    }
+
+    &__top-line {
+      font-size: 24px;
+      font-weight: 300;
+    }
+
+    &__bottom-line {
+      font-size: 56px;
+      font-weight: 700;
+    }
   }
 
   // Add space between the CTA button and the CTS (call-to-scroll).
