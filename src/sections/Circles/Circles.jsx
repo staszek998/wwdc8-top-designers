@@ -12,7 +12,7 @@ import CircleProgress from "../../components/CircleProgress/CircleProgress";
 import "./_Circles.scss";
 
 const Circles = () => (
-  <section className="Circles text-center border">
+  <section className="Circles text-center border" id="about-us">
     <div className="container">
       <div className="row py-5">
         <div className="col-12 col-md-4 pb-5 pb-md-0">
