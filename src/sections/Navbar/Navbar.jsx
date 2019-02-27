@@ -35,6 +35,7 @@ class Navbar extends Component {
       <nav className="Navbar Navbar--mobile row">
         {/* DSGN logotype */}
         <div className="col-6 d-flex justify-content-start align-items-center">
+          {/* eslint-disable-next-line */}
           <a href="#" className="Navbar__logotype">
             <img src={dsgnLogotype} alt="TOP DESIGNERS logotype" />
           </a>
@@ -63,18 +64,23 @@ class Navbar extends Component {
         >
           <ul className="d-flex flex-column justify-content-start align-items-stretch">
             <li>
+              {/* eslint-disable-next-line */}
               <a href="#about-us">About us</a>
             </li>
             <li>
+              {/* eslint-disable-next-line */}
               <a href="#our-team">Our team</a>
             </li>
             <li>
+              {/* eslint-disable-next-line */}
               <a href="#portfolio">Portolio</a>
             </li>
             <li>
+              {/* eslint-disable-next-line */}
               <a href="#brands">Brands</a>
             </li>
             <li>
+              {/* eslint-disable-next-line */}
               <a href="#contact">Contact</a>
             </li>
           </ul>
@@ -87,6 +93,7 @@ class Navbar extends Component {
           <div className="row">
             {/* DSGN logotype */}
             <div className="col-6 d-flex justify-content-start align-items-center">
+              {/* eslint-disable-next-line */}
               <a href="#" className="Navbar__logotype">
                 <img src={dsgnLogotype} alt="TOP DESIGNERS logotype" />
               </a>
@@ -95,15 +102,19 @@ class Navbar extends Component {
             {/* Right column */}
             <div className="col-6 d-flex justify-content-end align-items-center">
               {/* Social icons */}
+              {/* eslint-disable-next-line */}
               <a href="" className="social-media-icon">
                 <img src={iconFacebook} alt="" />
               </a>
+              {/* eslint-disable-next-line */}
               <a href="" className="social-media-icon">
                 <img src={iconInstagram} alt="" />
               </a>
+              {/* eslint-disable-next-line */}
               <a href="" className="social-media-icon">
                 <img src={iconTwitter} alt="" />
               </a>
+              {/* eslint-disable-next-line */}
               <a href="" className="social-media-icon">
                 <img src={iconLinkedin} alt="" />
               </a>
@@ -135,18 +146,23 @@ class Navbar extends Component {
                   }`}
                 >
                   <li>
+                    {/* eslint-disable-next-line */}
                     <a href="#about-us">About us</a>
                   </li>
                   <li>
+                    {/* eslint-disable-next-line */}
                     <a href="#our-team">Our team</a>
                   </li>
                   <li>
+                    {/* eslint-disable-next-line */}
                     <a href="#portfolio">Portolio</a>
                   </li>
                   <li>
+                    {/* eslint-disable-next-line */}
                     <a href="#brands">Brands</a>
                   </li>
                   <li>
+                    {/* eslint-disable-next-line */}
                     <a href="#contact">Contact</a>
                   </li>
                 </ul>
