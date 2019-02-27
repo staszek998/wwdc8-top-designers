@@ -1,1 +1,54 @@
 @charset "UTF-8";
+
+.Circles {
+  // Style the circles' inner content.
+  .circle-container {
+    position: relative;
+    &__inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      p {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+        .num {
+          font-size: 72px;
+          font-weight: 700;
+          line-height: 1;
+        }
+
+        .description {
+          font-size: 18px;
+          color: #454545;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  > .container > .row > .col-12 {
+    &:nth-child(1) {
+      .num {
+        color: #f34739;
+      }
+    }
+
+    &:nth-child(2) {
+      .num {
+        color: #009989;
+      }
+    }
+
+    &:nth-child(3) {
+      .num {
+        color: #152b3c;
+      }
+    }
+  }
+}

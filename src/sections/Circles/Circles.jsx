@@ -23,6 +23,13 @@ const Circles = () => (
                 color="#f34739"
                 animationStop={0.5}
               />
+
+              <div className="circle-container__inner">
+                <p>
+                  <span className="num">50</span>
+                  <span className="description">BIG PROJECTS</span>
+                </p>
+              </div>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
@@ -40,6 +47,13 @@ const Circles = () => (
                 color="#009989"
                 animationStop={0.35}
               />
+
+              <div className="circle-container__inner">
+                <p>
+                  <span className="num">35</span>
+                  <span className="description">CLIENTS</span>
+                </p>
+              </div>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
@@ -57,6 +71,13 @@ const Circles = () => (
                 color="#152b3b"
                 animationStop={0.8}
               />
+
+              <div className="circle-container__inner">
+                <p>
+                  <span className="num">80</span>
+                  <span className="description">MONTHS</span>
+                </p>
+              </div>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
