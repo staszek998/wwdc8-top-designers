@@ -16,7 +16,10 @@
   }
 
   // Add background image.
-  background-image: url("../../assets/images/sections/Hero/bg.png");
+  background-image: url("../../assets/images/sections/Hero/bg--mobile.png");
+  @include media-breakpoint-up(lg) {
+    background-image: url("../../assets/images/sections/Hero/bg--desktop.png");
+  }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,6 +27,9 @@
   .DSGNHeading {
     // Add space around the DSGNHeading.
     margin-top: 150px;
+    @include media-breakpoint-up(lg) {
+      margin-top: 200px;
+    }
     margin-bottom: 30px;
 
     // Style the text.
@@ -60,6 +66,9 @@
     margin-bottom: 40px;
     @include media-breakpoint-up(md) {
       margin-bottom: 100px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 150px;
     }
 
     // Style the button
