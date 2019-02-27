@@ -86,8 +86,8 @@
       outline: none;
     }
 
-    width: 0;
-    height: 0;
+    width: 50px;
+    height: 50px;
     position: relative;
     &::before,
     &::after {
@@ -99,18 +99,18 @@
       content: "";
       display: block;
       position: absolute;
-      left: 0;
-      transform: rotate(135deg);
+      left: 50%;
+      transform: rotate(135deg) translateX(70%);
     }
 
     // Top chevron
     &::before {
-      top: -50px;
+      top: -5px;
     }
 
     // Bottom chevron
     &::after {
-      top: -35px;
+      top: 10px;
     }
   }
 }
