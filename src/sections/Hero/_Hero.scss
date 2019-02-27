@@ -55,8 +55,21 @@
     }
   }
 
-  // Add space between the CTA button and the CTS (call-to-scroll).
   .cta {
+    // Add space between the CTA button and the CTS (call-to-scroll).
     margin-bottom: 100px;
+
+    // Style the button
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Quicksand";
+    font-weight: 400;
+    text-align: center;
+    border: 2px solid #ffffff;
+    padding: 5px 20px;
+    line-height: 1;
+
+    // Create the pill-like shape.
+    border-radius: 100px;
   }
 }
