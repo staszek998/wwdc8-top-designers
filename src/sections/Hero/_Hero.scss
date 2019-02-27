@@ -15,11 +15,18 @@
     margin-top: 70px;
   }
 
-  // Add space around the DSGNHeading.
+  // Add background image.
+  background-image: url("../../assets/images/sections/Hero/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   .DSGNHeading {
+    // Add space around the DSGNHeading.
     margin-top: 150px;
     margin-bottom: 30px;
 
+    // Style the text.
     &__top-line,
     &__bottom-line {
       color: #ffffff;
@@ -28,18 +35,22 @@
     }
 
     &__top-line {
-      font-size: 24px;
-      font-weight: 300;
-      @include media-breakpoint-up(md) {
-        font-size: 30px;
+      .copy {
+        font-size: 24px;
+        font-weight: 300;
+        @include media-breakpoint-up(md) {
+          font-size: 30px;
+        }
       }
     }
 
     &__bottom-line {
-      font-size: 56px;
-      font-weight: 700;
-      @include media-breakpoint-up(md) {
-        font-size: 72px;
+      h1 {
+        font-size: 56px;
+        font-weight: 700;
+        @include media-breakpoint-up(md) {
+          font-size: 72px;
+        }
       }
     }
   }
