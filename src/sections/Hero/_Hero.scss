@@ -70,6 +70,9 @@
     text-align: center;
     border: 2px solid #ffffff;
     padding: 5px 20px;
+    @include media-breakpoint-up(lg) {
+      padding: 10px 40px;
+    }
     line-height: 1;
 
     // Create the pill-like shape.
