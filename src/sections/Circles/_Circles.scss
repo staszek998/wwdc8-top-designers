@@ -17,6 +17,11 @@
         justify-content: center;
         align-items: center;
 
+        .num,
+        .description {
+          white-space: nowrap;
+        }
+
         .num {
           font-size: 72px;
           font-weight: 700;
