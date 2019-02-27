@@ -23,7 +23,7 @@ class CircleProgress extends Component {
     const circle = new ProgressBar.Circle(`#${this.props.id}`, {
       strokeWidth: 4,
       easing: "easeInOut",
-      duration: 1400,
+      duration: 2000,
       color: this.props.color,
       trailColor: "#eee",
       trailWidth: 1
