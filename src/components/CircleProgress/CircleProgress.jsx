@@ -8,12 +8,15 @@
 // JS imports
 import React, { Component } from "react";
 import ProgressBar from "progressbar.js";
+import isScrolledIntoView from "../../js/helpers/isScrolledIntoView";
 
 // SCSS imports
 import "./_CircleProgress.scss";
 
 class CircleProgress extends Component {
-  state = {};
+  state = {
+    didAnimate: false
+  };
 
   render() {
     return <div className="CircleProgress" id={this.props.id} />;
@@ -28,7 +31,15 @@ class CircleProgress extends Component {
       trailColor: "#eee",
       trailWidth: 1
     });
-    circle.animate(this.props.animationStop);
+
+    document.addEventListener("scroll", () => {
+      if (isScrolledIntoView(`#${this.props.id}`) && !this.state.didAnimate) {
+        circle.animate(this.props.animationStop);
+        this.setState({
+          didAnimate: true
+        });
+      }
+    });
   };
 }
 
