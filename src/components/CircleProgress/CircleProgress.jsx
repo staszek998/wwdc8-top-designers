@@ -14,9 +14,22 @@ import "./_CircleProgress.scss";
 
 class CircleProgress extends Component {
   state = {};
+
   render() {
-    return <div className="CircleProgress">xxx</div>;
+    return <div className="CircleProgress" id={this.props.id} />;
   }
+
+  componentDidMount = () => {
+    const circle = new ProgressBar.Circle(`#${this.props.id}`, {
+      strokeWidth: 4,
+      easing: "easeInOut",
+      duration: 1400,
+      color: "#FFEA82",
+      trailColor: "#eee",
+      trailWidth: 1
+    });
+    circle.animate(1);
+  };
 }
 
 export default CircleProgress;

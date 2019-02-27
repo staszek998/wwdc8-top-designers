@@ -6,6 +6,7 @@
 
 // JS imports
 import React from "react";
+import CircleProgress from "../../components/CircleProgress/CircleProgress";
 
 // SCSS imports
 import "./_Circles.scss";
@@ -16,7 +17,9 @@ const Circles = () => (
       <div className="row py-5">
         <div className="col-12 col-md-4 pb-5 pb-md-0">
           <div className="d-flex flex-column justify-content-start align-items-center">
-            <div className="circle">circle</div>
+            <div className="circle-container">
+              <CircleProgress id="CircleProgress1" />
+            </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
               itaque aspernatur explicabo! Accusantium suscipit dolorum
@@ -27,7 +30,9 @@ const Circles = () => (
         </div>
         <div className="col-12 col-md-4 pb-5 pb-md-0">
           <div className="d-flex flex-column justify-content-start align-items-center">
-            <div className="circle">circle</div>
+            <div className="circle-container">
+              <CircleProgress id="CircleProgress2" />
+            </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
               itaque aspernatur explicabo! Accusantium suscipit dolorum
@@ -38,7 +43,9 @@ const Circles = () => (
         </div>
         <div className="col-12 col-md-4">
           <div className="d-flex flex-column justify-content-start align-items-center">
-            <div className="circle">circle</div>
+            <div className="circle-container">
+              <CircleProgress id="CircleProgress3" />
+            </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
               itaque aspernatur explicabo! Accusantium suscipit dolorum
