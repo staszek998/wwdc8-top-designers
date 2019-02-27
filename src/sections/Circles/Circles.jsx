@@ -18,7 +18,7 @@ const Column = ({
   innerNum,
   innerText
 }) => (
-  <li className="Circles__Column col-12 col-md-4 pb-5 pb-md-0">
+  <li className="Circles__Column col-12 col-md-3 pb-5 pb-md-0">
     <div className="d-flex flex-column justify-content-start align-items-center">
       <div className="circle-container">
         <CircleProgress
@@ -45,7 +45,7 @@ const Column = ({
 const Circles = () => (
   <section className="Circles text-center border" id="about-us">
     <div className="container">
-      <ul className="row py-5">
+      <ul className="row py-5 justify-content-around">
         <Column
           circleContainerId="CircleProgress1"
           circleColour="#f34739"
