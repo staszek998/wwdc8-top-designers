@@ -11,76 +11,64 @@ import CircleProgress from "../../components/CircleProgress/CircleProgress";
 // SCSS imports
 import "./_Circles.scss";
 
+const Column = ({
+  circleContainerId,
+  circleColour,
+  circleAnimationStop,
+  innerNum,
+  innerText
+}) => (
+  <li className="col-12 col-md-4 pb-5 pb-md-0">
+    <div className="d-flex flex-column justify-content-start align-items-center">
+      <div className="circle-container">
+        <CircleProgress
+          id={circleContainerId}
+          color={circleColour}
+          animationStop={circleAnimationStop}
+        />
+
+        <div className="circle-container__inner">
+          <p>
+            <span className="num">{innerNum}</span>
+            <span className="description">{innerText}</span>
+          </p>
+        </div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius itaque
+        aspernatur explicabo!
+      </p>
+    </div>
+  </li>
+);
+
 const Circles = () => (
   <section className="Circles text-center border" id="about-us">
     <div className="container">
       <ul className="row py-5">
-        <li className="col-12 col-md-4 pb-5 pb-md-0">
-          <div className="d-flex flex-column justify-content-start align-items-center">
-            <div className="circle-container">
-              <CircleProgress
-                id="CircleProgress1"
-                color="#f34739"
-                animationStop={0.5}
-              />
+        <Column
+          circleContainerId="CircleProgress1"
+          circleColour="#f34739"
+          circleAnimationStop={0.5}
+          innerNum="50"
+          innerText="BIG PROJECTS"
+        />
 
-              <div className="circle-container__inner">
-                <p>
-                  <span className="num">50</span>
-                  <span className="description">BIG PROJECTS</span>
-                </p>
-              </div>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              itaque aspernatur explicabo!
-            </p>
-          </div>
-        </li>
-        <li className="col-12 col-md-4 pb-5 pb-md-0">
-          <div className="d-flex flex-column justify-content-start align-items-center">
-            <div className="circle-container">
-              <CircleProgress
-                id="CircleProgress2"
-                color="#009989"
-                animationStop={0.35}
-              />
+        <Column
+          circleContainerId="CircleProgress2"
+          circleColour="#009989"
+          circleAnimationStop={0.35}
+          innerNum="35"
+          innerText="CLIENTS"
+        />
 
-              <div className="circle-container__inner">
-                <p>
-                  <span className="num">35</span>
-                  <span className="description">CLIENTS</span>
-                </p>
-              </div>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              itaque aspernatur explicabo!
-            </p>
-          </div>
-        </li>
-        <li className="col-12 col-md-4">
-          <div className="d-flex flex-column justify-content-start align-items-center">
-            <div className="circle-container">
-              <CircleProgress
-                id="CircleProgress3"
-                color="#152b3b"
-                animationStop={0.8}
-              />
-
-              <div className="circle-container__inner">
-                <p>
-                  <span className="num">80</span>
-                  <span className="description">MONTHS</span>
-                </p>
-              </div>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              itaque aspernatur explicabo!
-            </p>
-          </div>
-        </li>
+        <Column
+          circleContainerId="CircleProgress3"
+          circleColour="#152b3b"
+          circleAnimationStop={0.8}
+          innerNum="80"
+          innerText="MONTHS"
+        />
       </ul>
     </div>
   </section>
