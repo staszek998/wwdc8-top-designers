@@ -14,8 +14,8 @@ import "./_Circles.scss";
 const Circles = () => (
   <section className="Circles text-center border" id="about-us">
     <div className="container">
-      <div className="row py-5">
-        <div className="col-12 col-md-4 pb-5 pb-md-0">
+      <ul className="row py-5">
+        <li className="col-12 col-md-4 pb-5 pb-md-0">
           <div className="d-flex flex-column justify-content-start align-items-center">
             <div className="circle-container">
               <CircleProgress
@@ -38,8 +38,8 @@ const Circles = () => (
               ab consectetur esse itaque nesciunt molestiae.
             </p>
           </div>
-        </div>
-        <div className="col-12 col-md-4 pb-5 pb-md-0">
+        </li>
+        <li className="col-12 col-md-4 pb-5 pb-md-0">
           <div className="d-flex flex-column justify-content-start align-items-center">
             <div className="circle-container">
               <CircleProgress
@@ -62,8 +62,8 @@ const Circles = () => (
               ab consectetur esse itaque nesciunt molestiae.
             </p>
           </div>
-        </div>
-        <div className="col-12 col-md-4">
+        </li>
+        <li className="col-12 col-md-4">
           <div className="d-flex flex-column justify-content-start align-items-center">
             <div className="circle-container">
               <CircleProgress
@@ -86,8 +86,8 @@ const Circles = () => (
               ab consectetur esse itaque nesciunt molestiae.
             </p>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </section>
 );
