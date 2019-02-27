@@ -24,7 +24,7 @@ class CircleProgress extends Component {
       strokeWidth: 4,
       easing: "easeInOut",
       duration: 1400,
-      color: "#FFEA82",
+      color: this.props.color,
       trailColor: "#eee",
       trailWidth: 1
     });
