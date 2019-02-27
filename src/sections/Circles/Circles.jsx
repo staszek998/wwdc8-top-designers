@@ -18,7 +18,11 @@ const Circles = () => (
         <div className="col-12 col-md-4 pb-5 pb-md-0">
           <div className="d-flex flex-column justify-content-start align-items-center">
             <div className="circle-container">
-              <CircleProgress id="CircleProgress1" color="#f34739" />
+              <CircleProgress
+                id="CircleProgress1"
+                color="#f34739"
+                animationStop={0.5}
+              />
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
@@ -31,7 +35,11 @@ const Circles = () => (
         <div className="col-12 col-md-4 pb-5 pb-md-0">
           <div className="d-flex flex-column justify-content-start align-items-center">
             <div className="circle-container">
-              <CircleProgress id="CircleProgress2" color="#009989" />
+              <CircleProgress
+                id="CircleProgress2"
+                color="#009989"
+                animationStop={0.35}
+              />
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
@@ -44,7 +52,11 @@ const Circles = () => (
         <div className="col-12 col-md-4">
           <div className="d-flex flex-column justify-content-start align-items-center">
             <div className="circle-container">
-              <CircleProgress id="CircleProgress3" color="#152b3b" />
+              <CircleProgress
+                id="CircleProgress3"
+                color="#152b3b"
+                animationStop={0.8}
+              />
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius

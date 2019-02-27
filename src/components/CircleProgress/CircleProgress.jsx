@@ -28,7 +28,7 @@ class CircleProgress extends Component {
       trailColor: "#eee",
       trailWidth: 1
     });
-    circle.animate(1);
+    circle.animate(this.props.animationStop);
   };
 }
 
