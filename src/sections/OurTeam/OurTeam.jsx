@@ -22,7 +22,7 @@ const OurTeam = () => (
   <section className="OurTeam text-center">
     <SectionHeading copy={{ top: "Meet us!", main: "OUR TEAM" }} />
 
-    <div className="container pt-5 px-0">
+    <div className="container py-5 px-0">
       <SinglePerson
         name="Adrianna"
         title="Senior Graphic Designer"
