@@ -3,7 +3,7 @@
 @import "../../scss/helpers/mixins/breakpoints";
 
 @mixin border--open-bottom {
-  top: 10px;
+  top: 15px;
   bottom: 0;
   border-top-width: 3px;
   border-bottom-width: 0;
@@ -11,13 +11,13 @@
 
 @mixin border--open-top {
   top: 0;
-  bottom: 10px;
+  bottom: 15px;
   border-bottom-width: 3px;
   border-top-width: 0;
 }
 
 @mixin border--open-right {
-  left: 10px;
+  left: 15px;
   right: 0;
   border-left-width: 3px;
   border-right-width: 0;
@@ -25,7 +25,7 @@
 
 @mixin border--open-left {
   left: 0;
-  right: 10px;
+  right: 15px;
   border-right-width: 3px;
   border-left-width: 0;
 }
@@ -74,8 +74,8 @@
     // Screens < MD:
     @include media-breakpoint-down(sm) {
       &::before {
-        left: 10px;
-        right: 10px;
+        left: 15px;
+        right: 15px;
         border-left-width: 3px;
         border-right-width: 3px;
       }
@@ -98,8 +98,8 @@
       &::before {
         border-top-width: 3px;
         border-bottom-width: 3px;
-        top: 10px;
-        bottom: 10px;
+        top: 15px;
+        bottom: 15px;
       }
 
       &:nth-child(1) {

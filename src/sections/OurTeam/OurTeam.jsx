@@ -19,18 +19,20 @@ const OurTeam = () => (
   <section className="OurTeam text-center">
     <SectionHeading copy={{ top: "Meet us!", main: "OUR TEAM" }} />
 
-    <SinglePerson
-      name="Adrianna"
-      title="Senior Graphic Designer"
-      bio="She is the graphic designer with 3 years of professional experience."
-      photoSrc={adrianna}
-    />
-    <SinglePerson
-      name="Adrianna"
-      title="Senior Graphic Designer"
-      bio="She is the graphic designer with 3 years of professional experience."
-      photoSrc={adrianna}
-    />
+    <div className="container px-0">
+      <SinglePerson
+        name="Adrianna"
+        title="Senior Graphic Designer"
+        bio="She is the graphic designer with 3 years of professional experience."
+        photoSrc={adrianna}
+      />
+      <SinglePerson
+        name="Adrianna"
+        title="Senior Graphic Designer"
+        bio="She is the graphic designer with 3 years of professional experience."
+        photoSrc={adrianna}
+      />
+    </div>
   </section>
 );
 
