@@ -28,20 +28,20 @@ const logomarks = [
   logo12,
   logo13,
   logo14,
-  logo1,
-  logo2,
-  logo3,
-  logo4,
-  logo5,
-  logo6,
-  logo7,
-  logo8,
-  logo9,
-  logo10,
-  logo11,
-  logo12,
+  logo14,
   logo13,
-  logo14
+  logo12,
+  logo11,
+  logo10,
+  logo9,
+  logo8,
+  logo7,
+  logo6,
+  logo5,
+  logo4,
+  logo3,
+  logo2,
+  logo1
 ];
 
 export default logomarks;
