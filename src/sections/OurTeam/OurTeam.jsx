@@ -18,6 +18,13 @@ import adrianna from "../../assets/images/sections/OurTeam/adrianna.png";
 const OurTeam = () => (
   <section className="OurTeam text-center">
     <SectionHeading copy={{ top: "Meet us!", main: "OUR TEAM" }} />
+
+    <SinglePerson
+      name="Adrianna"
+      title="Senior Graphic Designer"
+      bio="She is the graphic designer with 3 years of professional experience."
+      photoSrc={adrianna}
+    />
     <SinglePerson
       name="Adrianna"
       title="Senior Graphic Designer"

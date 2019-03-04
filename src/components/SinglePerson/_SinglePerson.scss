@@ -53,4 +53,19 @@
       }
     }
   }
+
+  // Change the columns order for the even SinglePerson's occurences on the MD+ screens.
+  @include media-breakpoint-up(md) {
+    // using the 'odd' keyword here instead of 'even', because the first SinglePerson is in fact even child of its parent.
+    &:nth-child(odd) {
+      > .col-12 {
+        &:first-child {
+          order: 2;
+        }
+        &:last-child {
+          order: 1;
+        }
+      }
+    }
+  }
 }
