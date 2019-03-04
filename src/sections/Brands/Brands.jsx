@@ -6,10 +6,15 @@
 
 // JS imports
 import React from "react";
+import SectionHeading from "../../components/SectionHeading/SectionHeading";
 
 // SCSS imports
 import "./_Brands.scss";
 
-const Brands = () => <section className="Brands text-center">Brands</section>;
+const Brands = () => (
+  <section className="Brands text-center">
+    <SectionHeading copy={{ top: `They've put trust in us`, main: "BRANDS" }} />
+  </section>
+);
 
 export default Brands;
