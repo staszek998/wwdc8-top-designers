@@ -6,12 +6,16 @@
 /// @author Stanisław Gregor <gregor.stanislaw@hotmail.com>
 ////
 
-#root {
-  &,
-  & > div {
-    box-sizing: border-box;
-    width: 100%;
-    overflow-x: hidden;
-    font-family: "Quicksand";
+html {
+  scroll-behavior: smooth;
+
+  #root {
+    &,
+    & > div {
+      box-sizing: border-box;
+      width: 100%;
+      overflow-x: hidden;
+      font-family: "Quicksand";
+    }
   }
 }
