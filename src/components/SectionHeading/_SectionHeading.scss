@@ -6,9 +6,17 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  .white-border {
+    border: 2px solid #f9fdfc;
+  }
+
   // Text styling.
   .DSGNHeading {
-    color: white;
+    .copy,
+    .heading {
+      color: white;
+      line-height: 1;
+    }
 
     .copy {
       font-size: 18px;

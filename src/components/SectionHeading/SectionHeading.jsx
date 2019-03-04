@@ -17,7 +17,7 @@ const SectionHeading = ({ copy }) => (
     <div className="container">
       <div className="row">
         <div className="col-12 py-3 px-md-3">
-          <div className="d-flex justify-content-center align-items-center p-5 border">
+          <div className="d-flex justify-content-center align-items-center p-5 white-border">
             <DSGNHeading copy={copy} isH1={false} />
           </div>
         </div>
