@@ -116,9 +116,8 @@
     }
   }
 
-  // Change the columns order for the even SinglePerson's occurences on the MD+ screens.
+  // Change the columns order for the odd SinglePerson's occurences on the MD+ screens.
   @include media-breakpoint-up(md) {
-    // using the 'odd' keyword here instead of 'even', because the first SinglePerson is in fact even child of its parent.
     &:nth-child(odd) {
       > .col-12 {
         &:first-child {
@@ -140,6 +139,8 @@
       }
     }
   }
+
+  // Add the triangular arrows.
 
   // Style the text.
   > .col-12:first-child {
