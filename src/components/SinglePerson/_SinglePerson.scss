@@ -144,6 +144,9 @@
   // Style the text.
   > .col-12:first-child {
     padding: 40px 30px 15px 30px;
+    @include media-breakpoint-up(md) {
+      padding-bottom: 40px;
+    }
 
     * {
       line-height: 1;
