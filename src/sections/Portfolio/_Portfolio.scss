@@ -95,8 +95,7 @@
 
         &__heading {
           color: white;
-          text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-            0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+          text-shadow: 3px 2px 6px rgba(0, 0, 0, 1);
           font-weight: 700;
           font-size: 15px;
           @include media-breakpoint-up(md) {
@@ -104,6 +103,9 @@
           }
           @include media-breakpoint-up(lg) {
             font-size: 28px;
+          }
+          @include media-breakpoint-up(xl) {
+            font-size: 32px;
           }
         }
 
