@@ -21,7 +21,7 @@ for (let i = 0; i < 21; i++) {
 }
 
 const SingleProject = ({ title, imgSrc }) => (
-  <li className="SingleProject">
+  <li className="SingleProject" style={{ backgroundImage: `url(${imgSrc})` }}>
     <div className="SingleProject__content">
       <h3>{title}</h3>
     </div>
