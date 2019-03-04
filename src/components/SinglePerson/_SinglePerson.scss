@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+@import "../../scss/helpers/mixins/breakpoints";
+
+@mixin border--open-bottom {
+  top: 15px;
+  bottom: 0;
+  border-top-width: 3px;
+  border-bottom-width: 0;
+}
+
+@mixin border--open-top {
+  top: 0;
+  bottom: 15px;
+  border-bottom-width: 3px;
+  border-top-width: 0;
+}
+
+@mixin border--open-right {
+  left: 15px;
+  right: 0;
+  border-left-width: 3px;
+  border-right-width: 0;
+}
+
+@mixin border--open-left {
+  left: 0;
+  right: 15px;
+  border-right-width: 3px;
+  border-left-width: 0;
+}
+
+.SinglePerson {
+  // Level the Bootstrap's default negative horizontal margins.
+  margin: 0 !important;
+
+  > .col-12 {
+    &:nth-child(2) {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    // Reveal the background photo on mobile.
+    // It is initially hidden due to the lack of any content.
+    @include media-breakpoint-down(sm) {
+      min-height: 50vw;
+    }
+  }
+
+  // Create the fictional borders.
+  > * {
+    // General styles.
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      border-style: solid;
+    }
+
+    // Set the appropriate colour.
+    &:nth-child(1) {
+      &::before {
+        border-color: black;
+      }
+    }
+    &:nth-child(2) {
+      &::before {
+        border-color: white;
+      }
+    }
+
+    // PLACE THE BORDERS:
+    // Screens < MD:
+    @include media-breakpoint-down(sm) {
+      &::before {
+        left: 15px;
+        right: 15px;
+        border-left-width: 3px;
+        border-right-width: 3px;
+      }
+
+      &:nth-child(1) {
+        &::before {
+          @include border--open-bottom();
+        }
+      }
+
+      &:nth-child(2) {
+        &::before {
+          @include border--open-top();
+        }
+      }
+    }
+
+    // Screens > MD:
+    @include media-breakpoint-up(md) {
+      &::before {
+        border-top-width: 3px;
+        border-bottom-width: 3px;
+        top: 15px;
+        bottom: 15px;
+      }
+
+      &:nth-child(1) {
+        &::before {
+          @include border--open-right();
+        }
+      }
+
+      &:nth-child(2) {
+        &::before {
+          @include border--open-left();
+        }
+      }
+    }
+  }
+
+  // Change the columns order for the odd SinglePerson's occurences on the MD+ screens.
+  @include media-breakpoint-up(md) {
+    &:nth-child(odd) {
+      > .col-12 {
+        &:first-child {
+          order: 2;
+
+          // Change the fictional border's "direction.
+          &::before {
+            @include border--open-left();
+          }
+        }
+        &:last-child {
+          order: 1;
+
+          // Change the fictional border's "direction.
+          &::before {
+            @include border--open-right();
+          }
+        }
+      }
+    }
+  }
+
+  // Add the triangular arrows.
+  @include media-breakpoint-up(md) {
+    > .col-12:first-child::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+
+      // Positioning:
+      top: 50%;
+
+      // Arrow/triangle creation:
+      width: 0;
+      height: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+    }
+
+    &:nth-child(odd) {
+      > .col-12:first-child::after {
+        left: 0;
+        transform: translate(-100%, -50%);
+        border-right: 30px solid white;
+      }
+    }
+
+    &:nth-child(even) {
+      > .col-12:first-child::after {
+        right: 0;
+        transform: translate(100%, -50%);
+        border-left: 30px solid white;
+      }
+    }
+  }
+
+  // Style the text.
+  > .col-12:first-child {
+    padding: 70px 40px 50px 40px;
+
+    * {
+      line-height: 1;
+      text-align: center;
+    }
+
+    .SinglePerson {
+      &__name {
+        font-size: 36px;
+        color: #000000;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      &__spacer {
+        width: 180px;
+        border-top: 3px solid #f34739;
+        margin-bottom: 25px;
+      }
+
+      &__bio {
+        font-size: 20px;
+        color: #454545;
+        font-weight: 400;
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@ import "./_SectionHeading.scss";
 
 const SectionHeading = ({ copy }) => (
   <div className="SectionHeading">
-    <div className="container">
+    <div className="container px-md-5">
       <div className="row">
         <div className="col-12 py-3 py-md-4">
           <div className="d-flex justify-content-center align-items-center white-border">
