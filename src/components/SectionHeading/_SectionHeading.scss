@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.SectionHeading {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--our-team {
+    background-image: url("../../assets/images/sections/OurTeam/bg.png");
+  }
+}
