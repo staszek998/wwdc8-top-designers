@@ -14,6 +14,10 @@ import "./_Brands.scss";
 const Brands = () => (
   <section className="Brands text-center">
     <SectionHeading copy={{ top: `They've put trust in us`, main: "BRANDS" }} />
+
+    <div className="container py-5">
+      <ul className="grid-container">grid</ul>
+    </div>
   </section>
 );
 
