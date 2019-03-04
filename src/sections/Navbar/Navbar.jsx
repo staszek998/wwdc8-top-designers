@@ -103,19 +103,31 @@ class Navbar extends Component {
             <div className="col-6 d-flex justify-content-end align-items-center">
               {/* Social icons */}
               {/* eslint-disable-next-line */}
-              <a href="" className="social-media-icon">
+              <a
+                href="https://www.linkedin.com/in/stanislaw-gregor"
+                className="social-media-icon"
+              >
                 <img src={iconFacebook} alt="" />
               </a>
               {/* eslint-disable-next-line */}
-              <a href="" className="social-media-icon">
+              <a
+                href="https://www.linkedin.com/in/stanislaw-gregor"
+                className="social-media-icon"
+              >
                 <img src={iconInstagram} alt="" />
               </a>
               {/* eslint-disable-next-line */}
-              <a href="" className="social-media-icon">
+              <a
+                href="https://www.linkedin.com/in/stanislaw-gregor"
+                className="social-media-icon"
+              >
                 <img src={iconTwitter} alt="" />
               </a>
               {/* eslint-disable-next-line */}
-              <a href="" className="social-media-icon">
+              <a
+                href="https://www.linkedin.com/in/stanislaw-gregor"
+                className="social-media-icon"
+              >
                 <img src={iconLinkedin} alt="" />
               </a>
 
