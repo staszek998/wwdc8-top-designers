@@ -18,22 +18,20 @@ for (let i = 0; i < 21; i++) {
     title: "Project title",
     imgSrc:
       i % 3 === 0
-        ? "https://dummyimage.com/600x400/999999/ffffff.png"
+        ? "https://images.unsplash.com/photo-1551527182-bf506e7484b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2026&q=80"
         : i % 2 === 0
-        ? "https://dummyimage.com/600x400/000000/ffffff.png"
-        : "https://dummyimage.com/600x400/6fb56f/ffffff.png"
+        ? "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=802&q=80"
+        : "https://images.unsplash.com/photo-1551542473-c9dc3670e2d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80"
   });
 }
 
 const SingleProject = ({ title, imgSrc }) => (
-  <li className="SingleProject">
-    <div
-      className="SingleProject__content"
-      style={{ backgroundImage: `url(${imgSrc})` }}
-    >
+  <li className="SingleProject" style={{ backgroundImage: `url(${imgSrc})` }}>
+    {/* eslint-disable-next-line */}
+    <a className="SingleProject__content" href="#">
       <span className="SingleProject__content__eye" />
       <h3 className="SingleProject__content__heading">{title}</h3>
-    </div>
+    </a>
   </li>
 );
 
