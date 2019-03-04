@@ -44,7 +44,7 @@
     // Reveal the background photo on mobile.
     // It is initially hidden due to the lack of any content.
     @include media-breakpoint-down(sm) {
-      height: 50vw;
+      min-height: 50vw;
     }
   }
 

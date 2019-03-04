@@ -14,6 +14,9 @@ import "./_OurTeam.scss";
 
 // Images.
 import adrianna from "../../assets/images/sections/OurTeam/adrianna.png";
+import olivia from "../../assets/images/sections/OurTeam/olivia.png";
+import thomas from "../../assets/images/sections/OurTeam/thomas.png";
+import taylor from "../../assets/images/sections/OurTeam/taylor.png";
 
 const OurTeam = () => (
   <section className="OurTeam text-center">
@@ -27,10 +30,24 @@ const OurTeam = () => (
         photoSrc={adrianna}
       />
       <SinglePerson
-        name="Adrianna"
-        title="Senior Graphic Designer"
-        bio="She is the graphic designer with 3 years of professional experience."
-        photoSrc={adrianna}
+        name="Olivia"
+        title="Art Director"
+        bio="She is the art director with 
+        8 years of professional experience."
+        photoSrc={olivia}
+      />
+      <SinglePerson
+        name="Thomas"
+        title="Software Engineer"
+        bio="He is the software engeneer with 
+        5 years of professional experience."
+        photoSrc={thomas}
+      />
+      <SinglePerson
+        name="Taylor"
+        title="CEO"
+        bio="She is the boss in here."
+        photoSrc={taylor}
       />
     </div>
   </section>
