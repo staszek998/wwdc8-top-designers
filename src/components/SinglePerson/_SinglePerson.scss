@@ -2,6 +2,34 @@
 
 @import "../../scss/helpers/mixins/breakpoints";
 
+@mixin border--open-bottom {
+  top: 10px;
+  bottom: 0;
+  border-top-width: 3px;
+  border-bottom-width: 0;
+}
+
+@mixin border--open-top {
+  top: 0;
+  bottom: 10px;
+  border-bottom-width: 3px;
+  border-top-width: 0;
+}
+
+@mixin border--open-right {
+  left: 10px;
+  right: 0;
+  border-left-width: 3px;
+  border-right-width: 0;
+}
+
+@mixin border--open-left {
+  left: 0;
+  right: 10px;
+  border-right-width: 3px;
+  border-left-width: 0;
+}
+
 .SinglePerson {
   // Level the Bootstrap's default negative horizontal margins.
   margin: 0 !important;
@@ -22,6 +50,7 @@
 
   // Create the fictional borders.
   > * {
+    // General styles.
     position: relative;
     &::before {
       content: "";
@@ -29,7 +58,20 @@
       border-style: solid;
     }
 
-    // < MD
+    // Set the appropriate colour.
+    &:nth-child(1) {
+      &::before {
+        border-color: black;
+      }
+    }
+    &:nth-child(2) {
+      &::before {
+        border-color: white;
+      }
+    }
+
+    // PLACE THE BORDERS:
+    // Screens < MD:
     @include media-breakpoint-down(sm) {
       &::before {
         left: 10px;
@@ -40,26 +82,18 @@
 
       &:nth-child(1) {
         &::before {
-          top: 10px;
-          bottom: 0;
-          border-color: #00000b;
-          border-top-width: 3px;
-          border-bottom-width: 0;
+          @include border--open-bottom();
         }
       }
 
       &:nth-child(2) {
         &::before {
-          top: 0;
-          bottom: 10px;
-          border-color: white;
-          border-bottom-width: 3px;
-          border-top-width: 0;
+          @include border--open-top();
         }
       }
     }
 
-    // > MD
+    // Screens > MD:
     @include media-breakpoint-up(md) {
       &::before {
         border-top-width: 3px;
@@ -70,21 +104,13 @@
 
       &:nth-child(1) {
         &::before {
-          left: 10px;
-          right: 0;
-          border-color: #00000b;
-          border-left-width: 3px;
-          border-right-width: 0;
+          @include border--open-right();
         }
       }
 
       &:nth-child(2) {
         &::before {
-          right: 10px;
-          left: 0;
-          border-color: white;
-          border-right-width: 3px;
-          border-left-width: 0;
+          @include border--open-left();
         }
       }
     }
@@ -100,10 +126,7 @@
 
           // Change the fictional border's "direction.
           &::before {
-            right: 10px;
-            left: 0;
-            border-right-width: 3px;
-            border-left-width: 0;
+            @include border--open-left();
           }
         }
         &:last-child {
@@ -111,10 +134,7 @@
 
           // Change the fictional border's "direction.
           &::before {
-            left: 10px;
-            right: 0;
-            border-left-width: 3px;
-            border-right-width: 0;
+            @include border--open-right();
           }
         }
       }
