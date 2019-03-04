@@ -1,4 +1,13 @@
 @charset "UTF-8";
 
+@import "../../scss/helpers/mixins/breakpoints";
+
 .SinglePerson {
+  // Reveal the background photo on mobile.
+  // It is initially hidden due to the lack of any content.
+  @include media-breakpoint-down(lg) {
+    > .col-12:nth-child(2) {
+      padding-top: 50%;
+    }
+  }
 }
