@@ -23,7 +23,7 @@ const SingleProject = ({ title, imgSrc }) => (
 );
 
 const Portfolio = () => (
-  <section className="Portfolio text-center">
+  <section className="Portfolio text-center" id="portfolio">
     <SectionHeading
       copy={{ top: "Check out our projects!", main: "PORTFOLIO" }}
     />

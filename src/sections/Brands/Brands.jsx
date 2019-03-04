@@ -13,7 +13,7 @@ import logomarks from "../../db/Brands/logomarks";
 import "./_Brands.scss";
 
 const Brands = () => (
-  <section className="Brands text-center">
+  <section className="Brands text-center" id="brands">
     <SectionHeading copy={{ top: `They've put trust in us`, main: "BRANDS" }} />
 
     <div className="container py-5">

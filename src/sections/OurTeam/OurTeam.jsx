@@ -19,7 +19,7 @@ import thomas from "../../assets/images/sections/OurTeam/thomas.png";
 import taylor from "../../assets/images/sections/OurTeam/taylor.png";
 
 const OurTeam = () => (
-  <section className="OurTeam text-center">
+  <section className="OurTeam text-center" id="our-team">
     <SectionHeading copy={{ top: "Meet us!", main: "OUR TEAM" }} />
 
     <div className="container py-5 px-0">

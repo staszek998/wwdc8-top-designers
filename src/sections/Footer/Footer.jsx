@@ -11,7 +11,7 @@ import React from "react";
 import "./_Footer.scss";
 
 const Footer = () => (
-  <footer className="Footer text-center">
+  <footer className="Footer text-center" id="contact">
     <div className="Footer__upper row justify-content-center align-items-center">
       <div className="col-12">
         <h2>CONTACT</h2>
