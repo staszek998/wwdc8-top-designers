@@ -1,7 +1,44 @@
 @charset "UTF-8";
 
+@import "../../scss/helpers/mixins/breakpoints";
+
 .Portfolio {
   .SectionHeading {
     background-image: url("../../assets/images/sections/Portfolio/bg.png");
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: repeat(7, 1fr);
+    }
+
+    .SingleProject {
+      position: relative;
+      &::before {
+        position: relative;
+        content: "";
+        height: 0;
+        display: inline-block;
+        padding-top: 100%;
+        width: 1px;
+      }
+
+      &__content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 }

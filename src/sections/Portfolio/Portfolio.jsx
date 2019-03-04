@@ -22,7 +22,9 @@ for (let i = 0; i < 21; i++) {
 
 const SingleProject = ({ title, imgSrc }) => (
   <li className="SingleProject">
-    <h3>{title}</h3>
+    <div className="SingleProject__content">
+      <h3>{title}</h3>
+    </div>
   </li>
 );
 
