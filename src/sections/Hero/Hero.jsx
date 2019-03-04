@@ -28,7 +28,8 @@ const Hero = () => (
             </a>
 
             {/* CTS (call to scroll) */}
-            <button className="scroll" />
+            {/* eslint-disable-next-line */}
+            <a className="scroll" href="#about-us" />
           </div>
         </div>
       </div>
