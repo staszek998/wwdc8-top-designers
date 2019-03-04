@@ -3,15 +3,54 @@
 @import "../../scss/helpers/mixins/breakpoints";
 
 .SinglePerson {
-  > .col-12:nth-child(2) {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  // Level the Bootstrap's default negative horizontal margins.
+  margin: 0 !important;
+
+  > .col-12 {
+    &:nth-child(2) {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
     // Reveal the background photo on mobile.
     // It is initially hidden due to the lack of any content.
-    @include media-breakpoint-down(lg) {
-      padding-top: 50%;
+    @include media-breakpoint-down(sm) {
+      height: 50vw;
+    }
+  }
+
+  // Create the fictional borders.
+  > * {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      border-style: solid;
+      border-left-width: 3px;
+      border-right-width: 3px;
+    }
+
+    &:nth-child(1) {
+      &::before {
+        top: 10px;
+        bottom: 0;
+        border-color: #00000b;
+        border-top-width: 3px;
+        border-bottom-width: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        top: 0;
+        bottom: 10px;
+        border-color: white;
+        border-bottom-width: 3px;
+        border-top-width: 0;
+      }
     }
   }
 }

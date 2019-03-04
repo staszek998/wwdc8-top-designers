@@ -18,7 +18,7 @@ import "./_SinglePerson.scss";
 const SinglePerson = ({ name, title, bio, photoSrc }) => (
   <li className="SinglePerson row">
     {/* Intro / bio */}
-    <div className="col-12 col-md-6 order-md-2">
+    <div className="col-12 col-md-6">
       <h3 className="SinglePerson__name">{name}</h3>
       <p className="SinglePerson__title">{title}</p>
       <hr className="SinglePerson__spacer" />
@@ -27,7 +27,7 @@ const SinglePerson = ({ name, title, bio, photoSrc }) => (
 
     {/* Photo */}
     <div
-      className="SinglePerson__photo col-12 col-md-6 order-md-1"
+      className="SinglePerson__photo col-12 col-md-6"
       style={{ backgroundImage: `url(${photoSrc})` }}
     />
   </li>
