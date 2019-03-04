@@ -49,17 +49,10 @@
         justify-content: center;
         align-items: center;
 
-        backface-visibility: hidden;
-        transition: all 300ms ease;
-        &:hover,
-        &:focus {
-          transform: scale(1.1);
-        }
-
         .eye {
           width: 13px;
           height: 13px;
-          border: solid 1px #000;
+          border: solid 1px white;
           border-radius: 75% 15%;
           position: relative;
           transform: rotate(45deg);
@@ -70,10 +63,26 @@
             position: absolute;
             width: 5px;
             height: 5px;
-            border: solid 1px #000;
+            border: solid 1px white;
             border-radius: 50%;
             left: 3px;
             top: 3px;
+          }
+        }
+
+        * {
+          opacity: 0;
+          transition: all 300ms ease;
+        }
+        
+        backface-visibility: hidden;
+        transition: all 300ms ease;
+        &:hover,
+        &:focus {
+          transform: scale(1.1);
+
+          * {
+            opacity: 1;
           }
         }
       }
