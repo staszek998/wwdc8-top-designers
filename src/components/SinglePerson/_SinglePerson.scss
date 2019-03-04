@@ -140,4 +140,35 @@
       }
     }
   }
+
+  // Style the text.
+  > .col-12:first-child {
+    padding: 40px 30px 15px 30px;
+
+    * {
+      line-height: 1;
+      text-align: center;
+    }
+
+    .SinglePerson {
+      &__name {
+        font-size: 36px;
+        color: #000000;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      &__spacer {
+        width: 180px;
+        border-top: 3px solid #f34739;
+        margin-bottom: 25px;
+      }
+
+      &__bio {
+        font-size: 20px;
+        color: #454545;
+        font-weight: 400;
+      }
+    }
+  }
 }
