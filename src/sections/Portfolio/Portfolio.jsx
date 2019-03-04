@@ -16,13 +16,22 @@ let dataset = [];
 for (let i = 0; i < 21; i++) {
   dataset.push({
     title: "Project title",
-    imgSrc: "https://dummyimage.com/600x400/584fff/fff.png&text=Single+Project"
+    imgSrc:
+      i % 3 === 0
+        ? "https://dummyimage.com/600x400/999999/ffffff.png"
+        : i % 2 === 0
+        ? "https://dummyimage.com/600x400/000000/ffffff.png"
+        : "https://dummyimage.com/600x400/6fb56f/ffffff.png"
   });
 }
 
 const SingleProject = ({ title, imgSrc }) => (
-  <li className="SingleProject" style={{ backgroundImage: `url(${imgSrc})` }}>
-    <div className="SingleProject__content">
+  <li className="SingleProject">
+    <div
+      className="SingleProject__content"
+      style={{ backgroundImage: `url(${imgSrc})` }}
+    >
+      <span className="eye" />
       <h3>{title}</h3>
     </div>
   </li>

@@ -9,6 +9,7 @@
 
   .grid-container {
     display: grid;
+    grid-gap: 0;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
     @include media-breakpoint-up(lg) {
@@ -16,6 +17,10 @@
     }
 
     .SingleProject {
+      border: 0;
+      outline: 0;
+      padding: 0;
+      overflow: hidden;
       position: relative;
       &::before {
         position: relative;
@@ -26,10 +31,7 @@
         width: 1px;
       }
 
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-
+      backface-visibility: hidden;
       &__content {
         position: absolute;
         top: 0;
@@ -37,11 +39,43 @@
         left: 0;
         right: 0;
 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
+
+        backface-visibility: hidden;
+        transition: all 300ms ease;
+        &:hover,
+        &:focus {
+          transform: scale(1.1);
+        }
+
+        .eye {
+          width: 13px;
+          height: 13px;
+          border: solid 1px #000;
+          border-radius: 75% 15%;
+          position: relative;
+          transform: rotate(45deg);
+
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border: solid 1px #000;
+            border-radius: 50%;
+            left: 3px;
+            top: 3px;
+          }
+        }
       }
     }
   }
