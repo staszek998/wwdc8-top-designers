@@ -10,11 +10,12 @@
 
 // JS imports
 import React from "react";
+import PropTypes from "prop-types";
 
 // SCSS imports
 import "./_SinglePerson.scss";
 
-const SinglePerson = ({ name, title, bio }) => (
+const SinglePerson = ({ name, title, bio, photoSrc }) => (
   <li className="SinglePerson row">
     {/* Intro / bio */}
     <div className="col-12 col-md-6 order-md-2">
@@ -25,8 +26,18 @@ const SinglePerson = ({ name, title, bio }) => (
     </div>
 
     {/* Photo */}
-    <div className="col-12 col-md-6 order-md-1">photo</div>
+    <div
+      className="SinglePerson__photo col-12 col-md-6 order-md-1"
+      style={{ backgroundImage: `url(${photoSrc})` }}
+    />
   </li>
 );
+
+SinglePerson.propTypes = {
+  name: PropTypes.string,
+  title: PropTypes.string,
+  bio: PropTypes.string,
+  photoSrc: PropTypes.string
+};
 
 export default SinglePerson;
