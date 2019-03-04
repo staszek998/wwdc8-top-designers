@@ -7,6 +7,7 @@
 // JS imports
 import React from "react";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
+import logomarks from "../../db/Brands/logomarks";
 
 // SCSS imports
 import "./_Brands.scss";
@@ -16,7 +17,13 @@ const Brands = () => (
     <SectionHeading copy={{ top: `They've put trust in us`, main: "BRANDS" }} />
 
     <div className="container py-5">
-      <ul className="grid-container">grid</ul>
+      <ul className="grid-container">
+        {logomarks.map((logo, index) => (
+          <li className="logotype" key={`logo${index}`}>
+            <img src={logo} alt="" />
+          </li>
+        ))}
+      </ul>
     </div>
   </section>
 );

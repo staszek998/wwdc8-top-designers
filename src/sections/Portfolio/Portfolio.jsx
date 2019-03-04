@@ -28,8 +28,8 @@ const Portfolio = () => (
       copy={{ top: "Check out our projects!", main: "PORTFOLIO" }}
     />
     <ul className="grid-container">
-      {dataset.map(project => (
-        <SingleProject {...project} />
+      {dataset.map((project, index) => (
+        <SingleProject {...project} key={`portfolioProject${index}`} />
       ))}
     </ul>
   </section>
