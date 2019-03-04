@@ -141,6 +141,38 @@
   }
 
   // Add the triangular arrows.
+  @include media-breakpoint-up(md) {
+    > .col-12:first-child::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+
+      // Positioning:
+      top: 50%;
+
+      // Arrow/triangle creation:
+      width: 0;
+      height: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+    }
+
+    &:nth-child(odd) {
+      > .col-12:first-child::after {
+        left: 0;
+        transform: translate(-100%, -50%);
+        border-right: 30px solid white;
+      }
+    }
+
+    &:nth-child(even) {
+      > .col-12:first-child::after {
+        right: 0;
+        transform: translate(100%, -50%);
+        border-left: 30px solid white;
+      }
+    }
+  }
 
   // Style the text.
   > .col-12:first-child {
