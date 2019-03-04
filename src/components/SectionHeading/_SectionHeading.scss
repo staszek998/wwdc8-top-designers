@@ -1,11 +1,23 @@
 @charset "UTF-8";
 
 .SectionHeading {
+  // Background image.
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  &--our-team {
-    background-image: url("../../assets/images/sections/OurTeam/bg.png");
+  // Text styling.
+  .DSGNHeading {
+    color: white;
+
+    .copy {
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    .heading {
+      font-size: 48px;
+      font-weight: 700;
+    }
   }
 }

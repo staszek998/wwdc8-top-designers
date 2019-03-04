@@ -13,7 +13,7 @@ import PropTypes from "prop-types";
 // SCSS imports
 import "./_DSGNHeading.scss";
 
-const DSGNHeading = ({ copy }) => (
+const DSGNHeading = ({ isH1, copy }) => (
   <div className="DSGNHeading">
     <div className="DSGNHeading__top-line">
       <div className="spacer spacer--left" role="presentation">
@@ -26,12 +26,17 @@ const DSGNHeading = ({ copy }) => (
     </div>
 
     <div className="DSGNHeading__bottom-line">
-      <h1>{copy.main}</h1>
+      {isH1 ? (
+        <h1 className="heading">{copy.main}</h1>
+      ) : (
+        <h2 className="heading">{copy.main}</h2>
+      )}
     </div>
   </div>
 );
 
 DSGNHeading.propTypes = {
+  isH1: PropTypes.bool,
   copy: PropTypes.object
 };
 
