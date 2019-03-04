@@ -31,8 +31,8 @@ const SingleProject = ({ title, imgSrc }) => (
       className="SingleProject__content"
       style={{ backgroundImage: `url(${imgSrc})` }}
     >
-      <span className="eye" />
-      <h3>{title}</h3>
+      <span className="SingleProject__content__eye" />
+      <h3 className="SingleProject__content__heading">{title}</h3>
     </div>
   </li>
 );
