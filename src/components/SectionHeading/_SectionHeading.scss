@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@import "../../scss/helpers/mixins/breakpoints";
+
+.SectionHeading {
+  // Background image.
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .white-border {
+    border: 2px solid #f9fdfc;
+    padding: 40px 0;
+    @include media-breakpoint-up(lg) {
+      padding: 80px 0;
+    }
+  }
+
+  // Text styling.
+  .DSGNHeading {
+    .copy,
+    .heading {
+      color: white;
+      line-height: 1;
+    }
+
+    .copy {
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    .heading {
+      font-size: 48px;
+      font-weight: 700;
+    }
+  }
+}

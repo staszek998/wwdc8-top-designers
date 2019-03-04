@@ -18,6 +18,7 @@ const Hero = () => (
         <div className="col">
           <div className="h-100 d-flex flex-column justify-content-center align-items-center">
             <DSGNHeading
+              isH1={true}
               copy={{ top: "Need our help?", main: "TOP DESIGNERS" }}
             />
 
