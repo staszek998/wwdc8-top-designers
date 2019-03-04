@@ -6,10 +6,17 @@
 
 // JS imports
 import React from "react";
+import SectionHeading from "../../components/SectionHeading/SectionHeading";
 
 // SCSS imports
 import "./_Portfolio.scss";
 
-const Portfolio = () => <section className="Portfolio text-center">Portfolio</section>;
+const Portfolio = () => (
+  <section className="Portfolio text-center">
+    <SectionHeading
+      copy={{ top: "Check out our projects!", main: "PORTFOLIO" }}
+    />
+  </section>
+);
 
 export default Portfolio;
