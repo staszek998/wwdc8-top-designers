@@ -75,6 +75,7 @@ Alternatively, you can use the `npm run` command instead of `yarn`.
 - [ProgressBar.js](https://kimmobrunfeldt.github.io/progressbar.js/) - JavaScript library that helps with the creation of the responsive and stylish progress bars for the web.
 - [CSS Hamburgers](https://jonsuh.com/hamburgers/) - The simple CSS-generated hamburger buttons.
 - [create-react-app](https://github.com/facebook/create-react-app) - The _Facebook's_ powerful _React_ boilerplate.
+- [Bootstrap](https://getbootstrap.com/) - The most popular HTML, CSS, and JS library in the world.
 - [Photopea](https://www.photopea.com/) - The web-based alternative for the _Adobe Photoshop_.
 
 ## Authors
