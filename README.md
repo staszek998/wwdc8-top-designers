@@ -33,6 +33,10 @@ yarn build
 
 Alternatively, you can use the `npm run` command instead of `yarn`.
 
+### Running the live version
+
+You can also view the [live website](https://top-designers.netlify.com/) hosted on the _Netlify_ servers.
+
 ## Main features
 
 ### Responsive header/navbar
