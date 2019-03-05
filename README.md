@@ -37,6 +37,7 @@ Alternatively, you can use the `npm run` command instead of `yarn`.
 
 - [React](https://reactjs.org/) - The _Facebook's_ front-end framework for the modern web.
 - [ProgressBar.js](https://kimmobrunfeldt.github.io/progressbar.js/) - JavaScript library that helps with the creation of the responsive and stylish progress bars for the web.
+- [CSS Hamburgers](https://jonsuh.com/hamburgers/) - The simple CSS-generated hamburger buttons.
 - [create-react-app](https://github.com/facebook/create-react-app) - The _Facebook's_ powerful _React_ boilerplate.
 - [Photopea](https://www.photopea.com/) - The web-based alternative for the _Adobe Photoshop_.
 
