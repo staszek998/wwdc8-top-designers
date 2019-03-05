@@ -79,8 +79,8 @@ Alternatively, you can use the `npm run` command instead of `yarn`.
 
 ## Authors
 
-- **Stanisław Gregor** - [staszek998](https://github.com/staszek998) - _Development_
-- **[Weekly WebDev Challange](https://www.facebook.com/groups/940002776068923/)** - _Design_
+- Stanisław Gregor ([staszek998](https://github.com/staszek998)) - _Development_
+- [Weekly WebDev Challange](https://www.facebook.com/groups/940002776068923/) - _Design_
 
 ## License
 
