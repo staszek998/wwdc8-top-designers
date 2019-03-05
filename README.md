@@ -33,6 +33,42 @@ yarn build
 
 Alternatively, you can use the `npm run` command instead of `yarn`.
 
+## Main features
+
+### Responsive header/navbar
+
+|                                       Mobile                                        |                                        Desktop                                        |
+| :---------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
+| ![Mobile version of the header/navbar](./screenshots/header--collapsed--mobile.jpg) | ![Desktop version of the header/navbar](./screenshots/header--collapsed--desktop.jpg) |
+
+### Expandable/collapsible header/navbar menu
+
+|                                                     Mobile                                                      |                                                      Desktop                                                      |
+| :-------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
+| ![Mobile version of the header/navbar menu in the 'expanded' state](./screenshots/header--expanded--mobile.jpg) | ![Desktop version of the header/navbar menu in the 'expanded' state](./screenshots/header--expanded--desktop.jpg) |
+
+### Animated JS progress circles &copy; ProgressBar.js
+
+![Animated JS progress circles](./screenshots/circles.jpg)
+
+### Advanced RWD within the _Our Team_ section's subcomponents
+
+|                                          Mobile                                          |                                          Desktop                                           |
+| :--------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
+| ![Mobile view of the _Single Person_ component](./screenshots/single-person--mobile.jpg) | ![Desktop view of the _Single Person_ component](./screenshots/single-person--desktop.jpg) |
+
+### Subtle hover effects over the _Portolio_ section's grid items
+
+|                                     Mobile                                     |                                     Desktop                                      |
+| :----------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+| ![Mobile view of the _Portfolio_ section](./screenshots/portfolio--mobile.jpg) | ![Desktop view of the _Portfolio_ section](./screenshots/portfolio--desktop.jpg) |
+
+### Subtle hover effects over the _Brands_ section's grid items
+
+|                                  Mobile                                  |                                  Desktop                                   |
+| :----------------------------------------------------------------------: | :------------------------------------------------------------------------: |
+| ![Mobile view of the _Brands_ section](./screenshots/brands--mobile.jpg) | ![Desktop view of the _Brands_ section](./screenshots/brands--desktop.jpg) |
+
 ## Built with
 
 - [React](https://reactjs.org/) - The _Facebook's_ front-end framework for the modern web.
