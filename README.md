@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Weekly WebDev Challange #8 - TOP DESIGNERS
 
-## Available Scripts
+This is a training project developed to improve my front-end programming skills within HTML, CSS, JS and the _React_ framework. The design was provided by the _Facebook_ group _[Weekly WebDev Challange](https://www.facebook.com/groups/940002776068923/)_ and to them are the thanks due.
 
-In the project directory, you can run:
+## Getting started
 
-### `npm start`
+These instructions will get you a copy of the project up and running on your local machine for the development and testing purposes.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Prerequisites
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Things you need to install the software:
 
-### `npm test`
+- Node JS
+- npm
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Running the project
 
-### `npm run build`
+This project is based on the _create-react-app_ boilerplate by _Facebook_ and has the built-in dev server. To get it running, type the following commands:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+yarn
+yarn start
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+If you are more interested in getting the compiled production build, please type:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+yarn
+yarn build
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Alternatively, you can use the `npm run` command instead of `yarn`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [React](https://reactjs.org/) - The _Facebook's_ front-end framework for the modern web.
+- [ProgressBar.js](https://kimmobrunfeldt.github.io/progressbar.js/) - JavaScript library that helps with the creation of the responsive and stylish progress bars for the web.
+- [create-react-app](https://github.com/facebook/create-react-app) - The _Facebook's_ powerful _React_ boilerplate.
+- [Photopea](https://www.photopea.com/) - The web-based alternative for the _Adobe Photoshop_.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Authors
 
-## Learn More
+- **Stanisław Gregor** - [staszek998](https://github.com/staszek998) - _Development_
+- **[Weekly WebDev Challange](https://www.facebook.com/groups/940002776068923/)** - _Design_
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is licensed under the MIT License.
